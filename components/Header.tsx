@@ -22,6 +22,10 @@ const navItems = [
     label: "Applications",
     href: "/#applications",
   },
+  {
+    label: "Case Studies",
+    href: "/case-studies",
+  },
 ];
 
 export default function Header() {

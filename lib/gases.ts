@@ -11,4 +11,8 @@ export const gasesData = [
   { gas: "Methyl sulfide", formula: "C₂H₆S", molWt: "62", bonds: "C-C, C-H, C-S", energies: "332,414,272", products: "H₂O, CO₂, SO₄²⁻" },
   { gas: "Phenol", formula: "C₆H₆OH", molWt: "94", bonds: "π bond, C-H, C-O", energies: "611,414,326", products: "H₂O, CO₂" },
   { gas: "Styrene", formula: "C₈H₈", molWt: "104", bonds: "C=C,C-C, C-H, π bond", energies: "611,332,414", products: "H₂O, CO₂" },
+  { gas: "Toluene", formula: "C₇H₈", molWt: "92", bonds: "C=C,C-C,C-H, π bond", energies: "611,332,414", products: "H₂O, CO₂" },
+{ gas: "Trimethylamine", formula: "C₃H₉N", molWt: "59", bonds: "C-N,C-H", energies: "305,414", products: "H₂O, N₂, CO₂" },
+{ gas: "Xylene", formula: "C₈H₁₀", molWt: "106", bonds: "C=C,C-C,C-H, π bond", energies: "611,332,414", products: "H₂O, CO₂" },
+
 ];

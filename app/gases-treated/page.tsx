@@ -1,5 +1,6 @@
 import { gasesData } from "@/lib/gases";
 import GasCards from "@/components/GasCards";
+import GasTreatmentSelector from "@/components/GasTreatmentSelector";
 export default function GasesTreatedPage() {
   return (
     <main id="main-content" className="content-page gases-page">
@@ -13,6 +14,7 @@ export default function GasesTreatedPage() {
 
       <section className="gases-section">
         <div className="header-container">
+          <GasTreatmentSelector />
           <div className="section-intro"><h2>Select your waste gas</h2><p>Open a card to explore its treatment details.</p></div>
           <GasCards />
           <div className="section-intro gases-intro">

@@ -8,6 +8,7 @@ const footerLinks = [
   { label: "Gases treated", href: "/gases-treated" },
   { label: "Advantages", href: "/advantages" },
   { label: "Applications", href: "/#applications" },
+  { label: "Case Studies", href: "/case-studies" },
 ];
 
 export default function Footer() {

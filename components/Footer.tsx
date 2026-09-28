@@ -2,9 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
+  { label: "What is ASTRA?", href: "/#about" },
+  { label: "How it works", href: "/#how-it-works" },
   { label: "Technology", href: "/technology" },
   { label: "Gases treated", href: "/gases-treated" },
   { label: "Advantages", href: "/advantages" },
+  { label: "Applications", href: "/#applications" },
 ];
 
 export default function Footer() {
@@ -37,6 +40,12 @@ export default function Footer() {
             </nav>
           </div>
 
+          <div className="footer-company-block">
+            <p className="footer-label">Engineered by</p>
+            <span className="company-wordmark">densitY</span>
+            <span className="company-subtitle">SUSTAINTECH</span>
+            <p>Making a difference<br/>that matters.</p>
+          </div>
         </div>
 
         <div className="footer-bottom">

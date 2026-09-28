@@ -2,11 +2,12 @@ import Image from "next/image";
 
 export default function TechnologyPage() {
   return (
-    <main className="content-page technology-page">
+    <main id="main-content" className="content-page technology-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
           <p className="eyebrow">ASTRA</p>
           <h1>Microwave Lysis Technology</h1>
+          <p className="page-hero-lede">Microwave energy and vacuum ultraviolet light. An integrated approach to waste gas treatment.</p>
         </div>
       </section>
 
@@ -93,12 +94,12 @@ export default function TechnologyPage() {
           </div>
           <div className="pretreatment-frame">
             <Image
-              src="/images/Plug & Play.png"
+              src="/images/Plug%20%26%20Play.png"
               alt="Plug-n-Play Pre-treatment Ready Architecture: Stage 1 Cyclone Separator removes over 90% large particles, Stage 2 Condensation Coil cools and condenses heavy oil vapours, Stage 3 Coalescing Filter captures over 99% oil mist and fine dust under 3 micrometers, clean and cool gas to ASTRA"
               width={1000}
               height={280}
               className="pretreatment-image"
-              sizes="(max-width: 1528px) calc(100vw - 48px), 1480px"
+              sizes="(max-width: 800px) calc(100vw - 60px), (max-width: 1336px) calc(100vw - 144px), 1192px"
             />
           </div>
         </div>

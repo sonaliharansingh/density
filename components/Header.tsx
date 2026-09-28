@@ -19,8 +19,8 @@ const navItems = [
     href: "/advantages",
   },
   {
-    label: "Case Studies",
-    href: "#case-studies",
+    label: "Applications",
+    href: "/#applications",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function Header() {
                 alt="ASTRA"
                 width={170}
                 height={55}
-                priority
+                preload
               />
             </div>
 
@@ -89,8 +89,8 @@ export default function Header() {
           </nav>
 
           {/* CTA */}
-          <Link href="#contact" className="header-cta">
-            <span>Contact Us</span>
+          <Link href="/#about" className="header-cta">
+            <span>Explore ASTRA</span>
 
             <svg
               width="16"
@@ -161,11 +161,11 @@ export default function Header() {
             ))}
 
             <Link
-              href="#contact"
+              href="/#about"
               className="mobile-contact"
               onClick={closeMenu}
             >
-              Contact Us
+              Explore ASTRA
             </Link>
           </div>
         </nav>

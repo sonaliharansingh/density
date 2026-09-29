@@ -1,0 +1,208 @@
+/* The presence of this route's scoped class gates every shell override, even
+   when Next.js retains this stylesheet after navigating to another page. */
+:global(body):has(.page) {
+  background: #fff;
+}
+
+:global(body):has(.page) > :global(.site-header),
+:global(body):has(.page) > :global(.site-footer) {
+  display: none;
+}
+
+.page {
+  container-type: inline-size;
+  width: 100%;
+  margin: 0;
+  padding: clamp(12px, 2vw, 32px);
+  background: #fff;
+  color: #080808;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.banner {
+  margin: 0;
+}
+
+.banner img, .footer img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(8px, 1.4vw, 20px);
+  margin: 24px 0 32px;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(48px, 5cqw, 86px);
+  padding: 10px 8px;
+  border-radius: 10px;
+  background: #477f25;
+  color: white;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(14px, 2.05cqw, 36px);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.navigation a:hover, .gasLink:hover {
+  background: #35651b;
+}
+
+.content {
+  margin: 0 clamp(8px, 2vw, 32px);
+  font-size: clamp(15.3px, 2.09cqw, 36px);
+}
+
+.content p {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1.04fr;
+  gap: clamp(24px, 4vw, 64px);
+  align-items: center;
+}
+
+.machine {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  justify-self: center;
+  height: auto;
+}
+
+.content .description {
+  margin-top: 24px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(24px, 5vw, 80px);
+  align-items: center;
+  margin-top: 28px;
+  margin-bottom: 32px;
+}
+
+.gasLink {
+  display: block;
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  max-width: 480px;
+  justify-self: center;
+  margin-top: 0;
+  aspect-ratio: 392 / 225;
+  padding: 0;
+  border-radius: 0 36px 36px 0;
+  background: #5d8e40;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.18;
+}
+
+.gasPrompt {
+  position: absolute;
+  top: 9%;
+  left: 0;
+  width: 100%;
+  font-size: 7.2cqw;
+  line-height: 1.28;
+}
+
+.gasLogo {
+  position: absolute;
+  top: 49%;
+  left: 14%;
+  width: 76%;
+  height: 25%;
+  overflow: hidden;
+}
+
+.gasLink img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.what {
+  position: absolute;
+  z-index: 1;
+  top: 46%;
+  left: 0;
+  width: 100%;
+  font-size: 7.2cqw;
+}
+
+.canDo {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  width: 100%;
+  font-size: 9cqw;
+}
+
+.footer {
+  margin-top: 32px;
+}
+
+.contact {
+  display: none;
+  margin: 24px 6%;
+  font-size: 14px;
+}
+
+.contact:target {
+  display: block;
+}
+
+.contact h2 {
+  font-size: 22px;
+  letter-spacing: normal;
+}
+
+.contact a {
+  color: #35651b;
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .navigation {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .navigation a {
+    min-height: 44px;
+    font-size: 13px;
+  }
+
+  .content { font-size: 15.3px; }
+  .intro, .bottom { grid-template-columns: 1fr; gap: 16px; }
+  .machine { width: 85%; margin: 0 auto; }
+  .content .description { margin-top: 14px; }
+  .gasLink { max-width: 280px; margin: 8px auto; }
+}

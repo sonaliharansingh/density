@@ -10,7 +10,7 @@ const navItems = [
   { label: "Gases Treated", href: "/gases-treated" },
   { label: "Advantages", href: "/advantages" },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Contact Us", href: "#contact-v2" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Header() {

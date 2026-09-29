@@ -1,4 +1,6 @@
 .page {
+  --font-body: clamp(22px, 2.4vw, 34px);
+  --line-body: 1.45;
   container-type: inline-size;
   width: 100%;
   margin: 0;
@@ -6,6 +8,10 @@
   background: #fff;
   color: var(--text);
   font-family: var(--font-site);
+}
+
+.page + :global(.site-footer) {
+  padding-top: 24px;
 }
 
 .srOnly {
@@ -31,7 +37,7 @@
 .intro {
   display: grid;
   grid-template-columns: 1fr 1.04fr;
-  gap: clamp(24px, 4vw, 64px);
+  gap: clamp(18px, 3vw, 48px);
   align-items: center;
 }
 
@@ -44,16 +50,16 @@
 }
 
 .content .description {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .bottom {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
-  gap: clamp(24px, 5vw, 80px);
+  gap: clamp(18px, 3.75vw, 60px);
   align-items: center;
-  margin-top: 28px;
-  margin-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .gasLink:hover { background: var(--green-dark); }
@@ -119,6 +125,7 @@
 }
 
 @media (max-width: 640px) {
+  .page { --font-body: clamp(16px, 2.8vw, 18px); --line-body: 1.5; }
   .intro, .bottom { grid-template-columns: 1fr; gap: 16px; }
   .machine { width: 85%; margin: 0 auto; }
   .content .description { margin-top: 14px; }

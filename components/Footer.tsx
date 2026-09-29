@@ -13,6 +13,7 @@ const footerLinks = [
   { label: "Advantages", href: "/advantages" },
   { label: "Applications", href: "/#applications" },
   { label: "Case Studies", href: "/case-studies" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Footer() {
@@ -26,8 +27,8 @@ export default function Footer() {
       )}
       <section id="contact-v2" className="site-contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact densitY Sustaintech</h2>
-        <p>Contact details will be available soon.</p>
-        <a href="#main-content">Back to ASTRA</a>
+        <p>Let’s discuss your exhaust treatment requirements.</p>
+        <Link href="/contact">Talk to our team →</Link>
       </section>
       <div className="header-container">
         <div className="footer-main">

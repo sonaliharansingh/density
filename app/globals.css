@@ -40,8 +40,16 @@ p { line-height: var(--line-body); }
 .site-header-compact .site-banner img { width: 100%; height: clamp(100px, 18vw, 240px); object-fit: fill; }
 .site-navigation { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(8px, 1.4vw, 20px); margin-top: 24px; }
 .site-navigation a { display: flex; align-items: center; justify-content: center; min-height: clamp(48px, 5vw, 86px); padding: 10px 8px; border-radius: 10px; background: var(--green); color: white; font-family: var(--font-site); font-size: clamp(14px, 2.05vw, 36px); font-weight: 600; line-height: 1.2; text-align: center; text-transform: uppercase; }
-.site-navigation a:hover, .site-navigation a[aria-current="page"] { background: var(--green-dark); }
-.site-navigation a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+.site-navigation a { transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
+@media (hover: hover) {
+  .site-navigation a:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 4px 10px #35651b26; }
+}
+body:not(:has(#contact-v2:target)) .site-navigation a[aria-current="page"],
+body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
+  background: var(--green-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 7px 16px #35651b40;
+}
 .site-contact { display: none; margin: 32px auto; max-width: var(--container); }
 .site-contact:target { display: block; }
 .site-contact a { color: var(--green-dark); text-decoration: underline; }

@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import footerBanner from "@/public/images/ASTRA Footer Banner.png";
 
 const footerLinks = [
   { label: "What is ASTRA?", href: "/#about" },
@@ -12,8 +16,19 @@ const footerLinks = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/" || pathname === "/home-v2";
+
   return (
     <footer className="site-footer">
+      {isHomePage && (
+        <Image className="site-footer-banner" src={footerBanner} alt="Making a difference that matters!" sizes="100vw" />
+      )}
+      <section id="contact-v2" className="site-contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact densitY Sustaintech</h2>
+        <p>Contact details will be available soon.</p>
+        <a href="#main-content">Back to ASTRA</a>
+      </section>
       <div className="header-container">
         <div className="footer-main">
           <div className="footer-brand-block">

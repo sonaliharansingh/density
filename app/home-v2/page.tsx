@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import banner from "@/public/images/ASTRA Main Banner.png";
-import footerBanner from "@/public/images/ASTRA Footer Banner.png";
 import machine from "@/public/images/Astra Line Drawing.png";
 import logo from "@/public/images/ASTRA Logo.png";
 import styles from "./page.module.css";
@@ -16,19 +14,6 @@ export default function HomeV2() {
   return (
     <main id="main-content" className={styles.page}>
       <h1 className={styles.srOnly}>ASTRA Waste Gas Treatment System</h1>
-      <header className={styles.banner}>
-        <Link href="/home-v2" aria-label="ASTRA home version 2">
-          <Image src={banner} alt="ASTRA by densitY Sustaintech — Waste Gas Treatment System" sizes="100vw" preload />
-        </Link>
-      </header>
-
-      <nav className={styles.navigation} aria-label="ASTRA navigation">
-        <Link href="/technology">Technology</Link>
-        <Link href="/gases-treated">Gases<br />Treated</Link>
-        <Link href="/advantages">Advantages</Link>
-        <Link href="/case-studies">Case Studies</Link>
-        <a href="#contact-v2">Contact Us</a>
-      </nav>
 
       <section className={styles.content} aria-label="About ASTRA">
         <div className={styles.intro}>
@@ -66,14 +51,6 @@ export default function HomeV2() {
         </div>
       </section>
 
-      <footer className={styles.footer}>
-        <Image src={footerBanner} alt="Making a difference that matters!" sizes="100vw" />
-      </footer>
-      <section id="contact-v2" className={styles.contact} aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact densitY Sustaintech</h2>
-        <p>Contact details will be available soon.</p>
-        <a href="#main-content">Back to ASTRA</a>
-      </section>
     </main>
   );
 }

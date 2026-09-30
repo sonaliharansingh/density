@@ -33,7 +33,7 @@ export default function GasTreatmentSelector() {
               <option key={gas.gas} value={gas.gas}>{gas.gas}</option>
             ))}
           </select>
-          <p className={styles.inputFormula}>{selectedGas ? selectedGas.formula : "15 gases · One treatment system"}</p>
+          {!selectedGas && <p className={styles.inputFormula}>15 gases · One treatment system</p>}
         </div>
 
         <div className={styles.process} key={selectedName} data-active={Boolean(selectedGas)}>

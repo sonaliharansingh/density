@@ -41,12 +41,47 @@
   align-items: center;
 }
 
+.intro > *, .bottom > * { min-width: 0; }
+
 .machine {
   display: block;
   width: 100%;
   max-width: 560px;
   justify-self: center;
   height: auto;
+}
+
+.actions {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 480px;
+  justify-self: center;
+}
+
+.brochureButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 100%;
+  min-height: 48px;
+  margin: 0;
+  padding: 12px 20px;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  background: white;
+  color: var(--green-dark);
+  font-size: clamp(16px, 1.3vw, 18px);
+  font-weight: 600;
+  line-height: 1.4;
+  transition: background-color .2s, border-color .2s;
+}
+
+.brochureButton:hover {
+  background: var(--green-light);
+  border-color: var(--green-dark);
 }
 
 .content .description {
@@ -124,10 +159,18 @@
   font-size: 9cqw;
 }
 
+@media (max-width: 900px) {
+  .page { --font-body: clamp(18px, 2.5vw, 22px); --line-body: 1.55; }
+  .intro, .bottom { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .machine { max-width: 480px; }
+  .actions { max-width: 360px; }
+}
+
 @media (max-width: 640px) {
   .page { --font-body: clamp(16px, 2.8vw, 18px); --line-body: 1.5; }
+  .content { margin-inline: 4px; }
   .intro, .bottom { grid-template-columns: 1fr; gap: 16px; }
   .machine { width: 85%; margin: 0 auto; }
   .content .description { margin-top: 14px; }
-  .gasLink { max-width: 280px; margin: 8px auto; }
+  .actions { max-width: 280px; gap: 16px; margin-top: 8px; }
 }

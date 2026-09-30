@@ -37,6 +37,7 @@ export default function Home() {
           <h1 id="home-page-title">Advanced VUV-Based <em>Waste Gas</em> Treatment</h1>
           <p className="hero-description">Meet ASTRA. Advanced photochemical technology designed to treat hazardous gaseous pollutants. A smarter approach to industrial air quality.</p>
           <div className="button-row">
+            <a href="/assets/astra-brochure.pdf" download="ASTRA-Brochure.pdf" className="button button-secondary">Download Brochure</a>
             <Link href="#about" className="button button-primary">Explore ASTRA <Icon name="arrow" /></Link>
             <Link href="#how-it-works" className="button button-secondary">How It Works <span aria-hidden="true">↗</span></Link>
           </div>

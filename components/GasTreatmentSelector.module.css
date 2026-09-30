@@ -1,5 +1,8 @@
 .section { margin-bottom: 56px; }
 .panel { --port-center: 57.5%; }
+.panel > * { min-width: 0; }
+.select { min-width: 0; max-width: 100%; }
+.product { max-width: 100%; overflow-wrap: anywhere; }
 .panel { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr) minmax(0, 1fr); align-items: center; gap: 18px; padding: 40px 28px; border: 1px solid var(--border); border-radius: 12px; background: radial-gradient(ellipse at 50% 100%, #edf3e9, transparent 65%), white; }
 .label { display: block; margin-bottom: 16px; color: var(--green); font-size: var(--font-small); font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
 .select { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid #91aa83; border-radius: 6px; background: white; color: var(--text); font: inherit; font-size: var(--font-body); cursor: pointer; }
@@ -29,18 +32,22 @@
   75% { transform: translateX(2px) rotate(.15deg); }
 }
 @keyframes arrive { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: translateX(0); } }
-@media (min-width: 761px) {
+@media (min-width: 1001px) {
   .input { position: relative; align-self: stretch; }
   .input .label { position: absolute; bottom: calc(100% - var(--port-center) + 40px); margin-bottom: 0; }
   .select { position: absolute; top: var(--port-center); height: 48px; transform: translateY(-50%); }
   .inputFormula { position: absolute; top: calc(var(--port-center) + 24px); }
 }
 @media (max-width: 1000px) { .panel { padding: 32px 20px; gap: 12px; } .process { --flow-width: 25px; } @keyframes flow { 0% { transform: translateX(0); opacity: 0; } 20%, 75% { opacity: 1; } 100% { transform: translateX(20px); opacity: 0; } } }
-@media (max-width: 760px) {
+@media (max-width: 1000px) {
   .panel { grid-template-columns: minmax(0, 1fr); gap: 36px; padding: 28px 22px; }
   .process { width: 100%; max-width: 440px; justify-self: center; margin-bottom: 20px; }
   .output { border-top: 1px solid var(--border); padding-top: 24px; }
   .output output { min-height: 70px; }
   .inputFormula { min-height: 0; }
+}
+@media (max-width: 480px) {
+  .panel { padding: 24px 16px; }
+  .select { font-size: 16px; }
 }
 @media (prefers-reduced-motion: reduce) { .panel *, .panel *::before, .panel *::after { animation: none !important; } }

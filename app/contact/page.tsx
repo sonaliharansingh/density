@@ -22,7 +22,7 @@ export default function ContactPage() {
         <section className={styles.hero} aria-labelledby="contact-heading">
           <div>
             <span className={styles.eyebrow}><span /> LET’S START A CONVERSATION</span>
-            <h1 id="contact-heading">Cleaner air starts with<br /><em>the right conversation.</em></h1>
+            <h1 id="contact-heading">Cleaner air starts with<br /> <em>the right conversation.</em></h1>
             <p>Tell us what’s in your exhaust. Together, we’ll explore an ASTRA treatment solution built around your process.</p>
             <div className={styles.tags}><span><Icon name="factory" /> Industrial applications</span><span><Icon name="lab" /> Laboratories & research</span></div>
           </div>

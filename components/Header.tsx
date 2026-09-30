@@ -73,12 +73,21 @@ export default function Header() {
           aria-controls="mobile-navigation"
           onClick={() => setOpenMenuPath(isMenuOpen ? null : pathname)}
         >
-          <span>{isMenuOpen ? "Close" : "Menu"}</span>
+          <span>Menu</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-            <path d={isMenuOpen ? "M6 6l12 12M6 18L18 6" : "M4 6h16M4 12h16M4 18h16"} />
+            <path d="M4 6h16" />
+            <path className="site-menu-middle-line" d="M4 12h12" />
+            <path d="M4 18h16" />
           </svg>
         </button>
-        <nav id="mobile-navigation" className="mobile-menu" aria-label="Mobile navigation" hidden={!isMenuOpen}>
+        <nav
+          id="mobile-navigation"
+          className="mobile-menu"
+          aria-label="Mobile navigation"
+          aria-hidden={!isMenuOpen}
+          inert={!isMenuOpen}
+          data-open={isMenuOpen}
+        >
           {navItems.map((item) => (
             <Link
               key={item.href}

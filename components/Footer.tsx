@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import footerBanner from "@/public/images/ASTRA Footer Banner.png";
+import companyLogo from "@/public/images/densitY_Sustaintech_Logo.png";
 
 const footerLinks = [
   { label: "What is ASTRA?", href: "/#about" },
@@ -66,8 +67,12 @@ export default function Footer() {
 
           <div className="footer-company-block">
             <p className="footer-label">Engineered by</p>
-            <span className="company-wordmark">densitY</span>
-            <span className="company-subtitle">SUSTAINTECH</span>
+            <Image
+              src={companyLogo}
+              alt="densitY Sustaintech"
+              className="footer-company-logo"
+              sizes="104px"
+            />
             <p>Making a difference<br/>that matters.</p>
           </div>
         </div>

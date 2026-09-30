@@ -42,7 +42,7 @@ p { line-height: var(--line-body); }
 .site-banner img, .site-footer-banner { display: block; width: 100%; height: auto; }
 .site-header-compact .site-banner img { width: 100%; height: clamp(100px, 18vw, 240px); object-fit: fill; }
 .site-navigation { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(8px, 1.4vw, 20px); margin-top: 24px; }
-.site-navigation a { display: flex; align-items: center; justify-content: center; min-height: clamp(48px, 5vw, 86px); padding: 10px 8px; border-radius: 10px; background: var(--green); color: white; font-family: var(--font-site); font-size: clamp(14px, 2.05vw, 36px); font-weight: 600; line-height: 1.2; text-align: center; text-transform: uppercase; }
+.site-navigation a { display: flex; align-items: center; justify-content: center; min-height: clamp(48px, 5vw, 86px); padding: 10px 8px; border-radius: 10px; background: var(--green); color: white; font-family: var(--font-site); font-size: clamp(14px, 1.8vw, 36px); font-weight: 600; line-height: 1.2; text-align: center; text-transform: uppercase; white-space: nowrap; }
 .site-navigation a { transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease; }
 @media (hover: hover) {
   .site-navigation a:hover { background: var(--green-dark); transform: translateY(-2px); box-shadow: 0 4px 10px #35651b26; }
@@ -59,8 +59,10 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .site-footer-banner { margin-bottom: 40px; }
 @media (max-width: 640px) {
   :root { --content-inset: 4px; }
+}
+@media (max-width: 800px) {
   .site-navigation { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 16px; }
-  .site-navigation a { min-height: 44px; font-size: var(--font-small); }
+  .site-navigation a { min-height: 48px; font-size: 13px; }
 }
 /* Landing page */
 .landing-hero { background: var(--paper); overflow: hidden; }
@@ -370,7 +372,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .footer-bottom { flex-wrap: wrap; gap: 10px; font-size: 12px; }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .site-navigation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .site-navigation a:last-child { grid-column: 1 / -1; }
 }

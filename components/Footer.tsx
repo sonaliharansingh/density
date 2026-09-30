@@ -22,7 +22,15 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       {isHomePage && (
-        <Image className="site-footer-banner" src={footerBanner} alt="Making a difference that matters!" sizes="100vw" />
+        <div className="site-footer-banner-wrap">
+          <Image className="site-footer-banner" src={footerBanner} alt="Making a difference that matters!" sizes="100vw" />
+          <a href="/assets/astra-brochure.pdf" download="ASTRA-Brochure.pdf" className="site-brochure-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+            </svg>
+            <span>Download Brochure</span>
+          </a>
+        </div>
       )}
       <section id="contact-v2" className="site-contact" aria-labelledby="contact-title">
         <h2 id="contact-title">Contact densitY Sustaintech</h2>

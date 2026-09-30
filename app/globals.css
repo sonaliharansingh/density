@@ -56,7 +56,32 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .site-contact { display: none; margin: 32px auto; max-width: var(--container); }
 .site-contact:target { display: block; }
 .site-contact a { color: var(--green-dark); text-decoration: underline; }
-.site-footer-banner { margin-bottom: 40px; }
+.site-footer-banner-wrap { position: relative; margin-bottom: 40px; }
+.site-brochure-button {
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(6px, 1vw, 10px);
+  width: max-content;
+  max-width: 44%;
+  min-height: 44px;
+  padding: clamp(6px, 1vw, 12px) clamp(8px, 1.5vw, 20px);
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  background: white;
+  color: var(--green-dark);
+  box-shadow: 0 4px 12px #35651b26;
+  font-size: clamp(12px, 1.3vw, 18px);
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+  transition: background-color .2s, border-color .2s;
+}
+.site-brochure-button:hover { background: var(--green-light); border-color: var(--green-dark); }
 @media (max-width: 640px) {
   :root { --content-inset: 4px; }
 }
@@ -368,7 +393,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .advantage-callout > div { min-width: 0; max-width: 100%; }
   .advantage-heading { flex-wrap: wrap; }
   .site-footer { padding-top: 36px; }
-  .site-footer-banner { margin-bottom: 24px; }
+  .site-footer-banner-wrap { margin-bottom: 24px; }
   .footer-bottom { flex-wrap: wrap; gap: 10px; font-size: 12px; }
 }
 

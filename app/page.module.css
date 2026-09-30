@@ -60,30 +60,6 @@
   justify-self: center;
 }
 
-.brochureButton {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  max-width: 100%;
-  min-height: 48px;
-  margin: 0;
-  padding: 12px 20px;
-  border: 1px solid var(--green);
-  border-radius: 8px;
-  background: white;
-  color: var(--green-dark);
-  font-size: clamp(16px, 1.3vw, 18px);
-  font-weight: 600;
-  line-height: 1.4;
-  transition: background-color .2s, border-color .2s;
-}
-
-.brochureButton:hover {
-  background: var(--green-light);
-  border-color: var(--green-dark);
-}
-
 .content .description {
   margin-top: 18px;
 }

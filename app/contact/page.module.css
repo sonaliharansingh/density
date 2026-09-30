@@ -103,6 +103,10 @@
 @media (prefers-reduced-motion: reduce) { .page *, .page *::before { transition: none; } }
 
 .hero > *, .contactGrid > *, .sidebar > *, .nextSteps li > div { min-width: 0; }
+@media (min-width: 1001px) {
+  .contactGrid { align-items: stretch; }
+  .sidebar { grid-template-rows: auto 1fr; }
+}
 @media (max-width: 1000px) {
   .contactGrid { grid-template-columns: minmax(0, 1fr); }
 }

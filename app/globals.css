@@ -39,6 +39,18 @@ p { line-height: var(--line-body); }
 /* Shared banner and navigation, used by every route. */
 .site-header { margin-bottom: 32px; }
 .site-menu-toggle { display: none; }
+.mobile-menu-wrap { display: none; position: relative; }
+.mobile-menu { position: absolute; top: calc(100% + 8px); right: 0; z-index: 100; width: min(260px, 100%); padding: 8px; border: 1px solid var(--border); border-radius: 12px; background: var(--white); color: var(--text); box-shadow: 0 8px 28px #16320f26; }
+.mobile-menu:not([hidden]) { display: grid; gap: 4px; animation: menu-drop-in 160ms ease-out both; }
+.mobile-menu a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; padding: 10px 12px; border-radius: 7px; font-size: 15px; line-height: 1.4; font-weight: 600; transition: background-color .2s; }
+.mobile-menu a:hover, .mobile-menu a[aria-current="page"] { background: var(--green-light); color: var(--green-dark); }
+.mobile-menu a[aria-current="page"] { box-shadow: inset 3px 0 var(--green); }
+.mobile-menu a:focus-visible { outline-offset: -3px; }
+.mobile-menu a span { color: var(--green); }
+.mobile-menu .mobile-menu-contact { margin-top: 4px; background: var(--green); color: white; }
+.mobile-menu .mobile-menu-contact span { color: inherit; }
+.mobile-menu .mobile-menu-contact:hover, .mobile-menu .mobile-menu-contact[aria-current="page"] { background: var(--green-dark); color: white; }
+@keyframes menu-drop-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
 .site-banner { display: block; }
 .site-banner img, .site-footer-banner { display: block; width: 100%; height: auto; }
 .site-header-compact .site-banner img { width: 100%; height: clamp(100px, 18vw, 240px); object-fit: fill; }
@@ -88,12 +100,10 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   :root { --content-inset: 4px; }
 }
 @media (max-width: 800px) {
+  .mobile-menu-wrap { display: flow-root; }
   .site-menu-toggle { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 48px; margin: 16px 0 0 auto; padding: 10px 14px; border: 0; border-radius: 8px; background: var(--green); color: white; font-size: 16px; font-weight: 600; cursor: pointer; }
   .site-menu-toggle:hover { background: var(--green-dark); }
-  .site-navigation { display: none; grid-template-columns: 1fr; gap: 8px; margin-top: 12px; }
-  .site-navigation.is-open { display: grid; }
-  .site-navigation a { justify-content: flex-start; min-height: 48px; padding-inline: 16px; font-size: 14px; text-align: left; white-space: normal; }
-  .site-navigation a[aria-current="page"] { transform: none !important; box-shadow: none !important; }
+  .site-navigation { display: none; }
 }
 /* Landing page */
 .landing-hero { background: var(--paper); overflow: hidden; }

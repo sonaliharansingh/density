@@ -15,10 +15,10 @@ const navItems = [
 
 export default function Header() {
   const pathname = usePathname();
-  const isHomePage = pathname === "/" || pathname === "/home-v2";
+  const isHomePage = pathname === "/";
   return (
     <header className={`site-header${isHomePage ? "" : " site-header-compact"}`}>
-      <Link href="/home-v2" className="site-banner" aria-label="ASTRA home">
+      <Link href="/" className="site-banner" aria-label="ASTRA home">
         <Image src={banner} alt="ASTRA by densitY Sustaintech ? Waste Gas Treatment System" sizes="100vw" preload />
       </Link>
       <nav className="site-navigation" aria-label="Main navigation">

@@ -7,7 +7,6 @@ import footerBanner from "@/public/images/ASTRA Footer Banner.png";
 
 const footerLinks = [
   { label: "What is ASTRA?", href: "/#about" },
-  { label: "How it works", href: "/#how-it-works" },
   { label: "Technology", href: "/technology" },
   { label: "Gases treated", href: "/gases-treated" },
   { label: "Advantages", href: "/advantages" },
@@ -18,7 +17,7 @@ const footerLinks = [
 
 export default function Footer() {
   const pathname = usePathname();
-  const isHomePage = pathname === "/" || pathname === "/home-v2";
+  const isHomePage = pathname === "/";
 
   return (
     <footer className="site-footer">

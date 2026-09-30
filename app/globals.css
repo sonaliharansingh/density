@@ -10,6 +10,7 @@
   --blue: #477f25; --blue-dark: #35651b; --text: #080808; --muted: #52594e;
   --white: #fff; --border: #dce3d8; --container: 1440px; --paper: #fff;
   --page-gutter: clamp(12px, 2vw, 32px);
+  --content-inset: clamp(8px, 2vw, 32px);
 }
 * { box-sizing: border-box; }
 main, section, article, aside, figure, form, nav { min-width: 0; }
@@ -29,13 +30,13 @@ h1, h2, h3, p, figure { margin-top: 0; }
 h2 { font-size: var(--font-section-title); letter-spacing: normal; line-height: 1.18; font-weight: 600; margin-bottom: 22px; }
 h3 { font-size: var(--font-card-title); letter-spacing: normal; line-height: 1.4; }
 p { line-height: var(--line-body); }
-.header-container { width: min(calc(100% - 96px), var(--container)); margin-inline: auto; }
+.header-container { width: calc(100% - 2 * var(--content-inset)); margin-inline: auto; }
 .eyebrow { font-size: var(--font-small); font-weight: 700; letter-spacing: .16em; color: var(--green); margin-bottom: 23px; }
 .status-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #729f57; margin-right: 8px; }
 .skip-link { position: fixed; top: -100px; left: 16px; padding: 14px 22px; background: white; z-index: 2000; }
 .skip-link:focus { top: 12px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
-/* Shared home-v2 banner and options, used by every route. */
+/* Shared banner and navigation, used by every route. */
 .site-header { margin-bottom: 32px; }
 .site-banner { display: block; }
 .site-banner img, .site-footer-banner { display: block; width: 100%; height: auto; }
@@ -57,6 +58,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .site-contact a { color: var(--green-dark); text-decoration: underline; }
 .site-footer-banner { margin-bottom: 40px; }
 @media (max-width: 640px) {
+  :root { --content-inset: 4px; }
   .site-navigation { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 16px; }
   .site-navigation a { min-height: 44px; font-size: var(--font-small); }
 }
@@ -183,7 +185,6 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   --font-page-title: clamp(34px, calc(3.5vw + 2px), 54px);
   font-size: var(--font-body);
 }
-.content-page .header-container { width: 100%; }
 .page-hero { padding: 66px 0; background: var(--green-light); border-bottom: 1px solid var(--border); }
 .page-hero h1 { margin: 0; max-width: 850px; font-size: var(--font-page-title); line-height: 1.17; letter-spacing: normal; font-weight: 550; }
 .page-hero-lede { max-width: 630px; margin: 22px 0 0; color: var(--muted); font-size: var(--font-body); }
@@ -247,7 +248,6 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .process-grid.is-revealed .process-step:nth-child(4) { animation-delay: .3s; }
 @media (min-width: 1500px) { .hero-grid { padding-block: 95px; } }
 @media (max-width: 1100px) {
-  .header-container { width: calc(100% - 64px); }
   .hero-grid { gap: 28px; padding-block: 60px; }
   .hero-copy h1 { font-size: var(--font-section-title); }
   .about-grid { gap: 45px; }
@@ -258,7 +258,6 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 }
 @media (max-width: 800px) {
   html { scroll-padding-top: 90px; }
-  .header-container { width: calc(100% - 40px); }
   .hero-grid { grid-template-columns: 1fr; gap: 42px; padding-block: 48px 35px; }
   .hero-copy h1 { max-width: 600px; font-size: var(--font-page-title); }
   .hero-description { max-width: 560px; }
@@ -295,7 +294,6 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .advantage-product-image { margin-inline: auto; }
 }
 @media (max-width: 480px) {
-  .header-container { width: calc(100% - 36px); }
   .hero-copy .eyebrow { font-size: 9px; }
   .hero-copy h1 { font-size: var(--font-section-title); }
   .hero-description { font-size: var(--font-body); }
@@ -348,7 +346,6 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 }
 
 @media (max-width: 640px) {
-  .header-container { width: calc(100% - 24px); }
   .content-page {
     --font-body: 16px;
     --font-small: 14px;
@@ -361,7 +358,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .landing-section { padding-block: 40px; }
   .button-row .button { flex: 1 1 180px; }
   .hero-bottom { flex-wrap: wrap; }
-  .page-hero { padding: 32px 12px; }
+  .page-hero { padding: 32px 0; }
   .page-section, .gases-section, .advantages-section { padding-block: 36px; }
   .tech-list li { padding: 18px 18px 18px 34px; }
   .tech-list li::before { left: 16px; top: 29px; }

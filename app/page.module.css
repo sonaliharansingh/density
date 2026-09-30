@@ -25,7 +25,7 @@
 }
 
 .content {
-  margin: 0 clamp(8px, 2vw, 32px);
+  margin: 0 var(--content-inset);
   font-size: var(--font-body);
 }
 
@@ -168,7 +168,6 @@
 
 @media (max-width: 640px) {
   .page { --font-body: clamp(16px, 2.8vw, 18px); --line-body: 1.5; }
-  .content { margin-inline: 4px; }
   .intro, .bottom { grid-template-columns: 1fr; gap: 16px; }
   .machine { width: 85%; margin: 0 auto; }
   .content .description { margin-top: 14px; }

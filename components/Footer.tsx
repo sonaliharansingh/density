@@ -10,7 +10,7 @@ const footerLinks = [
   { label: "Technology", href: "/technology" },
   { label: "Gases treated", href: "/gases-treated" },
   { label: "Advantages", href: "/advantages" },
-  { label: "Applications", href: "/#applications" },
+  // { label: "Applications", href: "/#applications" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Contact Us", href: "/contact" },
 ];

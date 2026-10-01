@@ -71,7 +71,7 @@ export default function Footer() {
               src={companyLogo}
               alt="densitY Sustaintech"
               className="footer-company-logo"
-              sizes="200px"
+              sizes="240px"
             />
             <p>Making a difference that matters.</p>
           </div>

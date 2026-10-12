@@ -1,5 +1,23 @@
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  src: url("/fonts/MyriadPro-Cond.woff2") format("woff2"),
+    url("/fonts/MyriadPro-Cond.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  src: url("/fonts/MyriadPro-BoldCond.woff2") format("woff2"),
+    url("/fonts/MyriadPro-BoldCond.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --font-site: "Myriad Pro", "MyriadPro", Arial, Helvetica, sans-serif;
+  --font-site: "Myriad Pro Condensed", Arial, Helvetica, sans-serif;
   --font-body: clamp(16px, 1.5vw, 22px);
   --font-small: clamp(12px, 1vw, 14px);
   --font-card-title: clamp(18px, 1.7vw, 24px);

@@ -1,5 +1,5 @@
 :root {
-  --font-site: Arial, Helvetica, sans-serif;
+  --font-site: "Myriad Pro", "MyriadPro", Arial, Helvetica, sans-serif;
   --font-body: clamp(16px, 1.5vw, 22px);
   --font-small: clamp(12px, 1vw, 14px);
   --font-card-title: clamp(18px, 1.7vw, 24px);

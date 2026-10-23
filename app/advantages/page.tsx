@@ -79,7 +79,9 @@ export default function AdvantagesPage() {
           </div>
 
           <div className="advantage-callout">
-            <div className="advantage-check" aria-hidden="true">✓</div>
+            <div className="advantage-check" aria-hidden="true">
+              <Image src="/images/Green%20Tick.png" alt="" width={44} height={44} />
+            </div>
             <div className="advantage-body">
               <h2 className="advantage-heading">
                 The <Image src="/images/ASTRA Logo.png" alt="ASTRA" width={90} height={28} className="advantage-logo" /> Advantage

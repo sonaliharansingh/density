@@ -335,8 +335,8 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .footer-map { display: block; width: 100%; height: 190px; border: 1px solid #dfe5dc; border-radius: 10px; background: #e8ecef; }
 .footer-social { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: 9px; }
 .footer-social .footer-heading { flex-basis: 100%; margin: 0; font-size: 18px; }
-.footer-social a { display: inline-flex; align-items: center; gap: 7px; color: #34751d; font-size: 14px; font-weight: 700; transition: color .2s ease; }
-.footer-social a:hover { color: #245b20; }
+.footer-social a { display: inline-flex; align-items: center; gap: 7px; color: #0a66c2; font-size: 14px; font-weight: 700; transition: color .2s ease; }
+.footer-social a:hover { color: #004182; }
 .footer-social svg { width: 17px; height: 17px; fill: currentColor; }
 .footer-legal { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 6px 16px; margin: 0; padding: 9px 0 0; border-top: 1px solid #dfe5dc; color: #687066; font-size: 14px; }
 .footer-legal p { margin: 0; line-height: 1.55; }

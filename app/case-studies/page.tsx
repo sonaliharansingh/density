@@ -12,7 +12,6 @@ export default function CaseStudiesPage() {
     <main id="main-content" className="content-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
-          <p className="eyebrow">ASTRA</p>
           <h1>Case Studies</h1>
           <p className="page-hero-lede">Waste gas treatment across industries, with a closer look at active installations.</p>
         </div>

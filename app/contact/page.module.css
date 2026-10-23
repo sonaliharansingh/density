@@ -128,3 +128,63 @@
   .checklist li p, .tip p, .nextSteps p, .location { font-size: 13px; }
   .nextSteps h3 { font-size: 16px; }
 }
+
+/* Contact page readability improvements. Keep these styles local to this page. */
+.eyebrow { font-size: 12px; line-height: 1.6; }
+.hero p { font-size: clamp(16px, 1.2vw, 18px); line-height: 1.75; }
+.tags { gap: 22px; }
+.tags > span { font-size: 14px; line-height: 1.5; }
+.heroMark > span { font-size: 10px; line-height: 1.6; }
+.kicker { font-size: 11px; line-height: 1.6; }
+.time { font-size: 11px; padding: 6px 9px; }
+.formCard h2 { line-height: 1.25; }
+.formIntro { font-size: 16px; line-height: 1.65; margin-bottom: 30px; }
+.formSectionTitle { font-size: 15px; line-height: 1.5; gap: 11px; }
+.formSectionTitle > span, .formSectionTitle small { font-size: 12px; }
+.fields label, .fullField { font-size: 14px; line-height: 1.6; }
+.formCard input:not([type="checkbox"]), .formCard select, .formCard textarea { font-size: 16px; line-height: 1.55; padding: 13px 14px; }
+.needs { margin-block: 23px; }
+.needs legend { font-size: 14px; line-height: 1.5; margin-bottom: 12px; }
+.needs > div { gap: 9px; }
+.needs label span { padding: 9px 13px; font-size: 13px; line-height: 1.5; }
+.fieldHint { font-size: 13px; line-height: 1.65; }
+.technical summary { min-height: 52px; font-size: 14px; line-height: 1.5; }
+.technical summary small { font-size: 12px; }
+.plus { font-size: 22px; }
+.submit { min-height: 50px; font-size: 16px; }
+.emailNote { font-size: 13px; line-height: 1.65; }
+.feedback { font-size: 15px; line-height: 1.65; }
+.contactCard h2, .checklist h2 { line-height: 1.3; }
+.contactCard > p, .checklist > p { font-size: 16px; line-height: 1.7; }
+.contactLink { gap: 14px; padding-block: 19px; }
+.contactLink small { font-size: 11px; line-height: 1.5; }
+.contactLink strong { font-size: 15px; line-height: 1.5; }
+.location { font-size: 14px; line-height: 1.6; }
+.sectionLabel { font-size: 11px; line-height: 1.6; }
+.checklist li { gap: 14px; margin-bottom: 21px; }
+.checklist li strong { font-size: 15px; line-height: 1.5; }
+.checklist li p, .tip p { font-size: 14px; line-height: 1.7; }
+.nextSteps .kicker { font-size: 11px; }
+.nextSteps h2 { line-height: 1.3; }
+.nextSteps ol { gap: 34px; }
+.nextSteps li { gap: 16px; }
+.nextSteps li > span { font-size: 14px; }
+.nextSteps h3 { font-size: 16px; line-height: 1.5; }
+.nextSteps p { font-size: 14px; line-height: 1.7; }
+
+@media (max-width: 640px) {
+  .eyebrow { font-size: 11px; }
+  .hero p { font-size: 16px; }
+  .tags > span { font-size: 13px; }
+  .heroMark > span { font-size: 10px; }
+  .formCard, .contactCard, .checklist { padding: 22px 18px; }
+  .formHeader .kicker { font-size: 10px; }
+  .formIntro { font-size: 16px; }
+  .fields label, .fullField, .needs legend, .technical summary { font-size: 15px; }
+  .needs label span { min-height: 44px; font-size: 14px; }
+  .fieldHint, .emailNote, .technical summary small { font-size: 13px; }
+  .submit { min-height: 52px; font-size: 16px; }
+  .contactCard > p, .checklist > p, .contactLink strong, .checklist li strong { font-size: 15px; }
+  .contactLink small { font-size: 11px; }
+  .checklist li p, .tip p, .nextSteps p, .location { font-size: 14px; }
+}

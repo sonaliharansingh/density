@@ -50,7 +50,6 @@ export default function AdvantagesPage() {
     <main id="main-content" className="content-page advantages-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
-          <p className="eyebrow">ASTRA</p>
           <h1>Astra vs Conventional Technology</h1>
           <p className="page-hero-lede">A closer look at the operating principles, footprint and costs of VUV technology.</p>
         </div>

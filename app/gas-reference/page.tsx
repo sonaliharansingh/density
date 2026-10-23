@@ -6,7 +6,6 @@ export default function GasReferencePage() {
     <main id="main-content" className="content-page gases-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
-          <p className="eyebrow">ASTRA</p>
           <h1>Gas Reference</h1>
           <p className="page-hero-lede">Explore waste gas treatment details and chemical reference data.</p>
         </div>

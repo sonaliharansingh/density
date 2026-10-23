@@ -4,7 +4,6 @@ export default function GasesTreatedPage() {
     <main id="main-content" className="content-page gases-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
-          <p className="eyebrow">ASTRA</p>
           <h1>Gases Treated</h1>
           <p className="page-hero-lede">Explore the gases ASTRA treats, from molecular bonds to treatment end products.</p>
         </div>

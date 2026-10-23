@@ -14,7 +14,7 @@ export default function GasTreatmentSelector() {
     <section className={styles.section} aria-labelledby="treatment-heading">
       <div className="section-intro">
         <p className="eyebrow">FROM INLET TO OUTPUT</p>
-        <h2 id="treatment-heading">See your gas treatment</h2>
+        {/* <h2 id="treatment-heading">See your gas treatment</h2> */}
         <p>Select a waste gas to explore its end products after ASTRA treatment.</p>
       </div>
 

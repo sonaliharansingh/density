@@ -39,7 +39,6 @@ export default function TechnologyPage() {
     <main id="main-content" className="content-page technology-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
-          <p className="eyebrow">ASTRA</p>
           <h1>Microwave Lysis Technology</h1>
           <p className="page-hero-lede">Microwave energy and vacuum ultraviolet light. An integrated approach to waste gas treatment.</p>
         </div>

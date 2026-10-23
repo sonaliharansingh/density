@@ -34,7 +34,7 @@
 main, section, article, aside, figure, form, nav { min-width: 0; }
 h1, h2, h3, p, li, a { overflow-wrap: break-word; }
 html { scroll-behavior: smooth; scroll-padding-top: 24px; }
-body { margin: 0; padding: var(--page-gutter); font-size: var(--font-body); background: var(--paper); color: var(--text); font-family: var(--font-site); -webkit-font-smoothing: antialiased; }
+body { zoom: 1.2; margin: 0; padding: var(--page-gutter); font-size: var(--font-body); background: var(--paper); color: var(--text); font-family: var(--font-site); -webkit-font-smoothing: antialiased; }
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; }
 button, a, summary { -webkit-tap-highlight-color: transparent; }
@@ -271,7 +271,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   --font-page-title: clamp(34px, calc(3.5vw + 2px), 54px);
   font-size: var(--font-body);
 }
-.page-hero { padding: 66px 0; background: var(--green-light); border-bottom: 1px solid var(--border); }
+.page-hero { padding: 33px 0; background: var(--green-light); border-bottom: 1px solid var(--border); }
 .page-hero h1 { margin: 0; max-width: 850px; font-size: var(--font-page-title); line-height: 1.17; letter-spacing: normal; font-weight: 550; }
 .page-hero-lede { max-width: 630px; margin: 22px 0 0; color: var(--muted); font-size: var(--font-body); }
 .page-section, .gases-section, .advantages-section { padding-block: 64px; }
@@ -433,7 +433,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .footer-map { height: 210px; }
   .footer-legal { align-items: flex-start; flex-direction: column; gap: 5px; font-size: 14px; }
   .footer-designed { text-align: left; padding-top: 2px; }
-  .page-hero { padding-block: 42px; }
+  .page-hero { padding-block: 21px; }
   .page-section, .gases-section, .advantages-section { padding-block: 40px; }
   .principle-panel { grid-template-columns: 1fr; }
   .operating-image { max-width: 140px; margin: auto; }
@@ -466,7 +466,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .landing-section { padding-block: 40px; }
   .button-row .button { flex: 1 1 180px; }
   .hero-bottom { flex-wrap: wrap; }
-  .page-hero { padding: 32px 0; }
+  .page-hero { padding: 16px 0; }
   .page-section, .gases-section, .advantages-section { padding-block: 36px; }
   .tech-benefits { gap: 20px; }
   .tech-benefit { grid-template-columns: 48px minmax(0,1fr); gap: 14px; }

@@ -4,14 +4,15 @@ import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import banner from "@/public/images/ASTRA Main Banner.png";
+import banner from "@/public/images/ASTRA Banner 1.png";
+import mobileBanner from "@/public/images/ASTRA Main Banner.png";
 
 const navItems = [
   { label: "Technology", href: "/technology" },
   { label: "Gases Treated", href: "/gases-treated" },
   { label: "Advantages", href: "/advantages" },
+  { label: "Models", href: "/models" },
   { label: "Case Studies", href: "/case-studies" },
-  { label: "Contact Us", href: "/contact" },
 ];
 
 export default function Header() {
@@ -20,7 +21,6 @@ export default function Header() {
   const isMenuOpen = openMenuPath === pathname;
   const menuRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
-  const isHomePage = pathname === "/";
 
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 801px)");
@@ -34,7 +34,10 @@ export default function Header() {
   useEffect(() => {
     if (!isMenuOpen) return;
     const closeOutside = (event: PointerEvent) => {
-      if (event.target instanceof Node && !menuRef.current?.contains(event.target)) {
+      if (
+        event.target instanceof Node &&
+        !menuRef.current?.contains(event.target)
+      ) {
         setOpenMenuPath(null);
       }
     };
@@ -53,28 +56,52 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className={`site-header${isHomePage ? "" : " site-header-compact"}`}>
+    <header className="site-header">
       <Link href="/" className="site-banner" aria-label="ASTRA home">
-        <Image src={banner} alt="ASTRA by densitY Sustaintech ? Waste Gas Treatment System" sizes="100vw" preload />
+        <Image
+          className="site-banner-desktop"
+          src={banner}
+          alt="ASTRA by densitY Sustaintech ? Waste Gas Treatment System"
+          sizes="100vw"
+          preload
+        />
+        <Image
+          className="site-banner-mobile"
+          src={mobileBanner}
+          alt="ASTRA by densitY Sustaintech"
+          sizes="100vw"
+        />
       </Link>
       <div
         ref={menuRef}
         className="mobile-menu-wrap"
         onBlur={(event) => {
-          if (!event.currentTarget.contains(event.relatedTarget)) setOpenMenuPath(null);
+          if (!event.currentTarget.contains(event.relatedTarget))
+            setOpenMenuPath(null);
         }}
       >
         <button
           ref={toggleRef}
           type="button"
           className="site-menu-toggle"
-          aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            isMenuOpen ? "Close navigation menu" : "Open navigation menu"
+          }
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
           onClick={() => setOpenMenuPath(isMenuOpen ? null : pathname)}
         >
           <span>Menu</span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            aria-hidden="true"
+          >
             <path d="M4 6h16" />
             <path className="site-menu-middle-line" d="M4 12h12" />
             <path d="M4 18h16" />
@@ -92,18 +119,22 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={item.href === "/contact" ? "mobile-menu-contact" : undefined}
               aria-current={pathname === item.href ? "page" : undefined}
               onClick={() => setOpenMenuPath(null)}
             >
-              {item.label}<span aria-hidden="true">&#8594;</span>
+              {item.label}
+              <span aria-hidden="true">&#8594;</span>
             </Link>
           ))}
         </nav>
       </div>
       <nav className="site-navigation" aria-label="Main navigation">
         {navItems.map((item) => (
-          <Link key={item.href} href={item.href} aria-current={pathname === item.href ? "page" : undefined}>
+          <Link
+            key={item.href}
+            href={item.href}
+            aria-current={pathname === item.href ? "page" : undefined}
+          >
             {item.label}
           </Link>
         ))}

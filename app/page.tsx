@@ -43,6 +43,15 @@ export default function Home() {
               </span>
               <span className={styles.canDo}>can do!</span>
             </Link>
+            <div className="site-footer-actions">
+              <a href="/assets/astra-brochure.pdf" download="ASTRA-Brochure.pdf" className="site-brochure-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+                </svg>
+                <span>Download Brochure</span>
+              </a>
+              <Link href="/contact" className="footer-contact-button">Contact Us</Link>
+            </div>
           </div>
         </div>
       </section>

@@ -104,24 +104,24 @@
 
 .gasLogo {
   position: absolute;
-  top: 49%;
+  top: 55%;
   left: 14%;
   width: 76%;
-  height: 25%;
-  overflow: hidden;
+  height: 19%;
 }
 
 .gasLink img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   filter: brightness(0) invert(1);
 }
 
 .what {
   position: absolute;
   z-index: 1;
-  top: 46%;
+  top: 45%;
   left: 0;
   width: 100%;
   font-size: 7.2cqw;

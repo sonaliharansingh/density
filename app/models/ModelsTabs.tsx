@@ -23,7 +23,7 @@ const modelTypes = [
             "Adapts to diverse VOC and odour treatment applications, with multiple process conditions and gas streams.",
           ],
         ],
-        image: "/images/Petrochemcial Image.png",
+        image: "/images/ASTRA Industry Image 2.png",
         alt: "ASTRA waste gas treatment system installed at an industrial facility",
         caption: (
           <>
@@ -48,7 +48,7 @@ const modelTypes = [
             "Reliable performance, low operating costs and minimal footprint.",
           ],
         ],
-        image: "/images/Pharmaceutical Image.png",
+        image: "/images/ASTRA Industry Image 1.png",
         alt: "ASTRA waste gas treatment system at a pharmaceutical facility",
       },
     ],

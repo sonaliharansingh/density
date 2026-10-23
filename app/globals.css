@@ -276,6 +276,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .page-hero-lede { max-width: 630px; margin: 22px 0 0; color: var(--muted); font-size: var(--font-body); }
 .page-section, .gases-section, .advantages-section { padding-block: 64px; }
 .page-section-tint { background: var(--green-light); border-block: 1px solid var(--border); }
+.technology-pretreatment-section { margin-top: 32px; }
 .section-intro { margin-bottom: 30px; }
 .section-intro h2 { font-size: var(--font-section-title); margin-bottom: 12px; }
 .section-intro p { color: var(--muted); font-size: var(--font-body); }

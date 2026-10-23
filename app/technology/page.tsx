@@ -88,42 +88,7 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      <section className="page-section">
-        <div className="header-container">
-          <div className="section-intro">
-            <h2>Proprietary Technology</h2>
-          </div>
-          <div className="proprietary-grid technology-card-grid">
-            <Image
-              src="/images/Ultra Hertz Microwave_Image.png"
-              alt="Ultra-Hertz Microwave Source: high frequency microwave energy, Ultra-Hertz breaks the bond"
-              width={360}
-              height={300}
-              className="proprietary-image"
-            />
-            <Image
-              src="/images/Nanoparticle Catalyst_Image.jpg"
-              alt="Nano Particle Catalyst: nano material catalyst, breakthrough results at room temp, no byproducts formed"
-              width={360}
-              height={300}
-              className="proprietary-image"
-            />
-            <Image
-              src="/images/Nano Anti-corrosion Coating_Image.png"
-              alt="Nano Anti-corrosion Coating: nano anti-corrosion material, coating tested with HF, inner lining pipelines and cavities"
-              width={360}
-              height={300}
-              className="proprietary-image"
-            />
-          </div>
-          <p className="tech-tagline">
-            A seamless integration of advanced technologies designed to deliver
-            superior efficiency
-          </p>
-        </div>
-      </section>
-
-      <section className="page-section page-section-tint">
+      <section className="page-section page-section-tint technology-pretreatment-section">
         <div className="header-container">
           <div className="section-intro">
             <h2>Plug-n-Play Pre-treatment Ready Architecture</h2>

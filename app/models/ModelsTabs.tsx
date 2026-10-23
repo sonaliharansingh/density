@@ -236,9 +236,6 @@ export default function ModelsTabs() {
                   height={75}
                   className={styles.logo}
                 />
-                {model.badge && (
-                  <span className={styles.badge}>{model.badge}</span>
-                )}
               </span>
               <span className={styles.modelInfo}>
                 <span className={styles.icon}>

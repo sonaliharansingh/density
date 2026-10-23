@@ -41,18 +41,18 @@ export default function ContactPage() {
                 <Icon name="factory" /> Industrial applications
               </span>
               <span>
-                <Icon name="lab" /> Laboratories & research
+                <Icon name="lab" /> Laboratories
               </span>
             </div>
           </div>
-          <div className={styles.heroMark} aria-hidden="true">
+          {/* <div className={styles.heroMark} aria-hidden="true">
             <div className={styles.orbit}>
               <Icon name="leaf" />
               <i />
               <i />
             </div>
             <span>BETTER PROCESSES. CLEANER POSSIBILITIES.</span>
-          </div>
+          </div> */}
         </section>
 
         <div className={styles.contactGrid}>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 </span>
                 <Icon name="arrow" />
               </a>
-              <div className={styles.location}>
+              {/* <div className={styles.location}>
                 <svg
                   width="19"
                   height="19"
@@ -111,7 +111,7 @@ export default function ContactPage() {
                   <circle cx="12" cy="10" r="2" />
                 </svg>{" "}
                 Mumbai, Maharashtra, India
-              </div>
+              </div> */}
             </section>
 
             <section
@@ -138,13 +138,7 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ul>
-              <div className={styles.tip}>
-                <Icon name="energy" />
-                <p>
-                  Still gathering your data? That’s okay. Start with what you
-                  know and we can discuss the next steps.
-                </p>
-              </div>
+   
             </section>
           </aside>
         </div>

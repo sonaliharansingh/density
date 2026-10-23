@@ -271,9 +271,10 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   --font-page-title: clamp(34px, calc(3.5vw + 2px), 54px);
   font-size: var(--font-body);
 }
-.page-hero { padding: 33px 0; background: var(--green-light); border-bottom: 1px solid var(--border); }
+.page-hero { padding: 24px 0; background: var(--green-light); border: 1px solid var(--border); border-radius: 14px; }
 .page-hero h1 { margin: 0; max-width: 850px; font-size: var(--font-page-title); line-height: 1.17; letter-spacing: normal; font-weight: 550; }
-.page-hero-lede { max-width: 630px; margin: 22px 0 0; color: var(--muted); font-size: var(--font-body); }
+.page-hero-lede { max-width: 630px; margin: 14px 0 0; color: var(--muted); font-size: var(--font-body); }
+.technology-page .page-hero-lede { max-width: none; white-space: nowrap; }
 .page-section, .gases-section, .advantages-section { padding-block: 64px; }
 .page-section-tint { background: var(--green-light); border-block: 1px solid var(--border); }
 .technology-pretreatment-section { margin-top: 32px; }

@@ -88,9 +88,7 @@ export default function ContactForm() {
           }
         }}
       >
-        <div className={styles.formSectionTitle}>
-          <span>01</span> A little about you <small>* Required</small>
-        </div>
+        <div className={styles.formSectionTitle}>A little about you</div>
         <div className={styles.fields}>
           <label className={styles.focusField}>
             <span className={styles.fieldLabel}>
@@ -140,7 +138,7 @@ export default function ContactForm() {
         </div>
         {/* <div className={styles.formSectionTitle}><span>02</span> Your treatment requirements</div>
         <label className={styles.fullField}>Application<select name="application" defaultValue=""><option value="" disabled>Select your application</option><option>Industrial manufacturing</option><option>Laboratory</option><option>Research facility</option><option>Other / exploring options</option></select></label> */}
-        <fieldset className={styles.needs}>
+        {/* <fieldset className={styles.needs}>
           <legend>What can we help you with?</legend>
           <div>
             {[
@@ -155,10 +153,10 @@ export default function ContactForm() {
               </label>
             ))}
           </div>
-        </fieldset>
+        </fieldset> */}
         <label className={`${styles.fullField} ${styles.focusField}`}>
           <span className={styles.fieldLabel}>
-            Process / gas details <span>*</span>
+            Process / Gas Details <span>*</span>
           </span>
           <textarea
             name="details"

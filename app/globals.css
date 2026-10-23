@@ -99,32 +99,44 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .footer-contact-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; max-width: var(--container); margin: 0 auto 24px; padding: 24px var(--content-inset); border-radius: 10px; background: var(--green-light); }
 .footer-contact-cta .eyebrow { margin: 0 0 5px; }
 .footer-contact-cta h2 { margin: 0; color: var(--green-dark); font-size: clamp(22px, 2.3vw, 32px); }
-.footer-contact-button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 48px; padding: 10px 22px; border-radius: 6px; background: var(--green); color: white; font-size: var(--font-small); font-weight: 700; white-space: nowrap; transition: background-color .2s, transform .2s; }
-.footer-contact-button:hover { background: var(--green-dark); transform: translateY(-2px); }
+.footer-contact-button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 66px; padding: 14px 24px; border-radius: 13px; background: var(--green); color: white; font-size: 18px; font-weight: 700; white-space: nowrap; box-shadow: 0 5px 14px #263d171a; transition: background-color .2s, box-shadow .2s, transform .2s; }
+.footer-contact-button svg { width: 19px; height: 19px; }
+.footer-contact-button:hover { background: var(--green-dark); box-shadow: 0 8px 18px #263d1726; transform: translateY(-2px); }
 .site-footer-banner-wrap { position: relative; margin-bottom: 16px; }
-.site-footer-actions { display: flex; justify-content: flex-start; align-items: center; gap: 12px; margin: 0 auto; }
+.site-footer-actions { display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; gap: 14px; margin: 0 auto; }
 .site-brochure-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(4px, 1vw, 10px);
-  width: max-content;
-  max-width: 44%;
-  min-height: clamp(28px, 4vw, 44px);
-  padding: clamp(4px, 1vw, 12px) clamp(6px, 1.5vw, 20px);
+  gap: 12px;
+  width: 232px;
+  min-height: 78px;
+  padding: 12px 20px;
   border: 1px solid var(--green);
-  border-radius: clamp(4px, .8vw, 8px);
+  border-radius: 13px;
   background: white;
   color: var(--green-dark);
-  box-shadow: 0 4px 12px #35651b26;
-  font-size: clamp(10px, 1.3vw, 18px);
-  font-weight: 600;
-  line-height: 1.4;
-  text-align: center;
-  transition: background-color .2s, border-color .2s;
+  box-shadow: 0 5px 14px #263d171a;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: left;
+  transition: background-color .2s, border-color .2s, box-shadow .2s, transform .2s;
 }
-.site-brochure-button svg { width: clamp(12px, 1.8vw, 20px); height: clamp(12px, 1.8vw, 20px); }
-.site-brochure-button:hover { background: var(--green-light); border-color: var(--green-dark); }
+.site-brochure-button > svg { flex: 0 0 20px; width: 20px; height: 20px; }
+.site-brochure-copy { display: grid; gap: 1px; }
+.site-brochure-title { font-size: 18px; white-space: nowrap; }
+.site-brochure-subtitle { color: #5b6c52; font-size: 15px; }
+.site-brochure-button:hover { background: var(--green-light); border-color: var(--green-dark); box-shadow: 0 8px 18px #263d1726; transform: translateY(-2px); }
+.site-brochure-button:focus-visible, .footer-contact-button:focus-visible { outline: 3px solid #8bb96c; outline-offset: 3px; }
+.site-brochure-button:active, .footer-contact-button:active { transform: translateY(0); }
+@media (max-width: 480px) {
+  .site-footer-actions { gap: 10px; }
+  .site-brochure-button { width: min(232px, 100%); min-height: 72px; padding: 10px 16px; }
+  .site-brochure-title { font-size: 17px; }
+  .site-brochure-subtitle { font-size: 14px; }
+  .site-footer-actions .footer-contact-button { min-height: 60px; padding: 12px 20px; font-size: 17px; }
+}
 @media (max-width: 640px) {
   :root { --content-inset: 4px; }
 }
@@ -268,9 +280,12 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .section-intro h2 { font-size: var(--font-section-title); margin-bottom: 12px; }
 .section-intro p { color: var(--muted); font-size: var(--font-body); }
 .gases-intro { margin-top: 64px; }
-.tech-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; }
-.tech-list li { position: relative; padding: 24px 24px 24px 42px; border: 1px solid var(--border); border-radius: 6px; background: white; font-size: var(--font-body); line-height: 1.75; }
-.tech-list li::before { content: ''; position: absolute; left: 22px; top: 33px; width: 5px; height: 5px; background: #7b9b5d; border-radius: 50%; }
+.tech-benefits { display: grid; gap: 24px; max-width: 900px; margin: 0; padding: 0; list-style: none; }
+.tech-benefit { display: grid; grid-template-columns: 56px minmax(0,1fr); align-items: start; gap: 16px; }
+.tech-benefit-icon { display: grid; width: 56px; height: 56px; place-items: center; border-radius: 14px; background: #f0f4ed; color: #67944e; }
+.tech-benefit-icon svg { width: 24px; height: 24px; stroke-width: 1.8; }
+.tech-benefit-copy h2 { margin: 3px 0 4px; font-size: clamp(19px, 1.7vw, 24px); font-weight: 600; line-height: 1.35; }
+.tech-benefit-copy p { margin: 0; color: #6d6d6d; font-size: var(--font-body); line-height: 1.5; }
 .principle-panel { display: grid; grid-template-columns: minmax(0,1fr) 150px; align-items: center; gap: 50px; padding: 30px; background: white; border: 1px solid var(--border); border-radius: 8px; }
 .flow-image { display: block; width: 100%; height: auto; }
 .flow-divider { display: none; }
@@ -379,7 +394,6 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .final-cta-inner { align-items: flex-start; flex-direction: column; gap: 25px; }
   .footer-main { gap: 22px 20px; }
   .footer-contact-cta { margin-bottom: 20px; }
-  .tech-list { grid-template-columns: 1fr; }
   .principle-panel { grid-template-columns: minmax(0,1fr) 100px; gap: 20px; padding: 18px; }
   .proprietary-grid { grid-template-columns: 1fr; max-width: 500px; margin-inline: auto; }
   .advantage-callout { flex-wrap: wrap; padding: 25px; gap: 20px; }
@@ -454,8 +468,10 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .hero-bottom { flex-wrap: wrap; }
   .page-hero { padding: 32px 0; }
   .page-section, .gases-section, .advantages-section { padding-block: 36px; }
-  .tech-list li { padding: 18px 18px 18px 34px; }
-  .tech-list li::before { left: 16px; top: 29px; }
+  .tech-benefits { gap: 20px; }
+  .tech-benefit { grid-template-columns: 48px minmax(0,1fr); gap: 14px; }
+  .tech-benefit-icon { width: 48px; height: 48px; border-radius: 12px; }
+  .tech-benefit-copy h2 { margin-top: 0; }
   .advantage-callout { padding: 20px 16px; }
   .advantage-callout > div { min-width: 0; max-width: 100%; }
   .advantage-heading { flex-wrap: wrap; }

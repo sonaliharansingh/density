@@ -48,9 +48,17 @@ export default function Home() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
                 </svg>
-                <span>Download Brochure</span>
+                <span className="site-brochure-copy">
+                  <span className="site-brochure-title">Download Brochure</span>
+                  <span className="site-brochure-subtitle">Explore our solutions</span>
+                </span>
               </a>
-              <Link href="/contact" className="footer-contact-button">Contact Us</Link>
+              <Link href="/contact" className="footer-contact-button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5 8 8 0 0 1-3.4-.8L4 20l1.3-4.1a7.5 7.5 0 1 1 14.7-4.4Z" />
+                </svg>
+                <span>Contact Us</span>
+              </Link>
             </div>
           </div>
         </div>

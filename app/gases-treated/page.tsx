@@ -1,5 +1,3 @@
-import { gasesData } from "@/lib/gases";
-import GasCards from "@/components/GasCards";
 import GasTreatmentSelector from "@/components/GasTreatmentSelector";
 export default function GasesTreatedPage() {
   return (
@@ -15,39 +13,6 @@ export default function GasesTreatedPage() {
       <section className="gases-section">
         <div className="header-container">
           <GasTreatmentSelector />
-          <div className="section-intro"><h2>Select your waste gas</h2><p>Open a card to explore its treatment details.</p></div>
-          <GasCards />
-          <div className="section-intro gases-intro">
-            <h2>Gas reference</h2>
-            <p className="table-scroll-hint">Scroll horizontally to see all columns.</p>
-          </div>
-
-          <div className="gases-table-wrap" role="region" aria-label="Gases treated table" tabIndex={0}>
-            <table className="gases-table">
-              <thead>
-                <tr>
-                  <th scope="col">Gas</th>
-                  <th scope="col">Mol. Formula</th>
-                  <th scope="col">Mol. Wt.</th>
-                  <th scope="col">Main Chemical Bonds</th>
-                  <th scope="col">Bond Energies (kJ/mol)</th>
-                  <th scope="col">End Products</th>
-                </tr>
-              </thead>
-              <tbody>
-                {gasesData.map((row) => (
-                  <tr key={row.gas}>
-                    <th scope="row">{row.gas}</th>
-                    <td className="formula-cell">{row.formula}</td>
-                    <td>{row.molWt}</td>
-                    <td>{row.bonds}</td>
-                    <td>{row.energies}</td>
-                    <td className="products-cell">{row.products}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
         </div>
       </section>
     </main>

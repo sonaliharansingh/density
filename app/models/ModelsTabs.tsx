@@ -28,7 +28,7 @@ const modelTypes = [
     ],
   },
   {
-    name: "LABORATORY", accent: "SOLUTIONS", icon: "lab", badge: "OTE", title: "Fume Hood Companion",
+    name: "LABORATORY", accent: "SOLUTIONS", icon: "lab", logo: "/images/ASTRA OTT Logo.png", title: "Fume Hood Companion",
     columns: [
       {
         details: [
@@ -52,7 +52,7 @@ const modelTypes = [
     ],
   },
   {
-    name: "MOBILE", accent: "SOLUTIONS", icon: "mobile", badge: "OTE", title: "The perfect on-the-go unit",
+    name: "MOBILE", accent: "SOLUTIONS", icon: "mobile", logo: "/images/ASTRA OTG Logo.png", title: "The perfect on-the-go unit",
     columns: [
       {
         details: [
@@ -106,7 +106,7 @@ export default function ModelsTabs() {
               aria-controls="model-panel" tabIndex={activeIndex === index ? 0 : -1}
               className={`${styles.model} ${activeIndex === index ? styles.activeModel : ""}`}
               onClick={() => setActiveIndex(index)}>
-              <span className={styles.logoWrap}><Image src="/images/ASTRA Logo.png" alt="" width={240} height={75} className={styles.logo} />
+              <span className={styles.logoWrap}><Image src={model.logo ?? "/images/ASTRA Logo.png"} alt="" width={240} height={75} className={styles.logo} />
                 {model.badge && <span className={styles.badge}>{model.badge}</span>}</span>
               <span className={styles.modelInfo}><span className={styles.icon}><ModelIcon type={model.icon} /></span>
                 <span className={styles.modelName}>{model.name}<br /><em>{model.accent}</em></span></span>

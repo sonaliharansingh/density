@@ -346,6 +346,11 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .footer-legal a { color: #465142; }
 .footer-designed { text-align: right; }
 .footer-designed a { color: #34751d; font-weight: 700; }
+@media (min-width: 1101px) {
+  .footer-link-column,
+  .footer-location { padding-top: 140px; }
+  .footer-map-link { top: 188px; }
+}
 /* Content remains visible with JavaScript disabled. Animations run only on entry. */
 @keyframes reveal { from { opacity: .3; transform: translateY(17px); } to { opacity: 1; transform: translateY(0); } }
 .is-revealed { animation: reveal .65s ease both; }

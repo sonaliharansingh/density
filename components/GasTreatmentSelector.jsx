@@ -40,7 +40,7 @@ export default function GasTreatmentSelector() {
           <div className={styles.flow} aria-hidden="true"><i /><i /><i /></div>
           <figure className={styles.machine}>
             <Image src={astraImage} alt="ASTRA waste gas treatment system with inlet and outlet" sizes="(max-width: 760px) 70vw, 40vw" />
-            <figcaption>ASTRA treatment</figcaption>
+            {/* <figcaption>ASTRA treatment</figcaption>   */}
           </figure>
           <div className={`${styles.flow} ${styles.outflow}`} aria-hidden="true"><i /><i /><i /></div>
         </div>

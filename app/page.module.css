@@ -56,6 +56,17 @@
   justify-self: center;
 }
 
+.actions :global(.site-brochure-button),
+.actions :global(.footer-contact-button) {
+  flex: 1 1 0;
+  width: auto;
+  min-width: min-content;
+  max-width: max-content;
+  white-space: normal;
+}
+
+.actions :global(.site-brochure-title) { white-space: normal; }
+
 .content .description {
   margin-top: 18px;
 }
@@ -126,7 +137,7 @@
   .page { --font-body: clamp(18px, 2.5vw, 22px); --line-body: 1.55; }
   .intro, .bottom { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .machine { max-width: 480px; }
-  .actions { max-width: 360px; }
+  .actions { max-width: 480px; }
 }
 
 @media (max-width: 640px) {
@@ -134,5 +145,10 @@
   .intro, .bottom { grid-template-columns: 1fr; gap: 16px; }
   .machine { width: 85%; margin: 0 auto; }
   .content .description { margin-top: 14px; }
-  .actions { max-width: 280px; gap: 16px; margin-top: 8px; }
+  .actions { width: 100%; max-width: 420px; gap: 16px; margin-top: 8px; }
+  .actions :global(.site-footer-actions) { gap: 10px; }
+  .actions :global(.site-brochure-button) { min-height: 72px; padding: 10px; gap: 8px; }
+  .actions :global(.site-brochure-title) { font-size: 17px; }
+  .actions :global(.site-brochure-subtitle) { font-size: 14px; }
+  .actions :global(.footer-contact-button) { min-height: 48px; padding: 9px 10px; gap: 7px; font-size: clamp(14px, 3.6vw, 17px); white-space: normal; }
 }

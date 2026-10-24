@@ -32,7 +32,6 @@
 .activeTab { border-color: #168fca; background: #168fca; color: white; }
 .activeTab:hover { border-color: #087db7; }
 .icon { width: 36px; height: 36px; object-fit: contain; }
-.activeTab .icon { filter: brightness(0) invert(1); }
 .panel {
   display: grid;
   min-width: 0;

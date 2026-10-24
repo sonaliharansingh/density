@@ -23,7 +23,7 @@
 .output output { display: block; min-height: 100px; }
 .placeholder, .resultCaption { margin: 0 0 12px; color: var(--muted); font-size: var(--font-small); line-height: var(--line-body); }
 .products { display: flex; flex-wrap: wrap; gap: 8px; }
-.product { padding: 9px 12px; border: 1px solid #cee0c3; border-radius: 6px; background: #edf5e8; color: var(--green-dark); font-size: var(--font-card-title); font-weight: 600; }
+.product { padding: 9px 12px; border: 1px solid #cee0c3; border-radius: 6px; background: #edf5e8; color: var(--green-dark); font-size: var(--font-card-title); font-weight: 700; }
 .result { animation: arrive .5s ease both; }
 @keyframes flow { 0% { transform: translateX(0); opacity: 0; } 20%, 75% { opacity: 1; } 100% { transform: translateX(32px); opacity: 0; } }
 @keyframes vibrate {

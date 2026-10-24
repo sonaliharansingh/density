@@ -3,7 +3,7 @@
 .hero { display: grid; grid-template-columns: 1fr 220px; gap: 24px; align-items: center; margin-bottom: 46px; }
 .eyebrow { display: inline-flex; align-items: center; gap: 9px; font-size: 10px; font-weight: 700; letter-spacing: .16em; color: var(--mint); }
 .eyebrow > span { width: 6px; height: 6px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 5px #a8e7b510; }
-.hero h1 { margin: 24px 0 18px; font-size: clamp(32px, 3.5vw, 52px); line-height: 1.12; font-weight: 500; letter-spacing: -.045em; }
+.hero h1 { margin: 24px 0 18px; font-size: clamp(32px, 3.5vw, 52px); line-height: 1.12; font-weight: 400; letter-spacing: -.045em; }
 .hero h1 em { font-style: normal; color: var(--mint); }
 .hero p { max-width: 580px; font-size: 15px; color: #b9ccbf; line-height: 1.8; margin-bottom: 22px; }
 .tags { display: flex; flex-wrap: wrap; gap: 20px; }
@@ -23,13 +23,13 @@
 .kicker { display: block; font-size: 9px; letter-spacing: .13em; font-weight: 700; line-height: 1.6; }
 .formHeader .kicker { color: #57735d; }
 .time { white-space: nowrap; color: #667760; background: #e9eee4; padding: 5px 7px; border-radius: 4px; font-size: 8px; letter-spacing: .06em; }
-.formCard h2 { font-size: clamp(23px, 2.1vw, 30px); letter-spacing: -.035em; margin-bottom: 9px; font-weight: 500; }
+.formCard h2 { font-size: clamp(23px, 2.1vw, 30px); letter-spacing: -.035em; margin-bottom: 9px; font-weight: 400; }
 .formIntro { color: #687564; font-size: 13px; margin-bottom: 27px; }
 .formSectionTitle { display: flex; align-items: center; gap: 9px; font-size: 13px; font-weight: 700; padding-top: 23px; margin: 23px 0 17px; border-top: 1px solid #dfe6db; }
 .formSectionTitle > span { color: #73876b; font-size: 10px; font-weight: 400; }
 .formSectionTitle small { margin-left: auto; color: #6e7a66; font-size: 10px; font-weight: 400; }
 .fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px 16px; }
-.fields label, .fullField { display: block; font-size: 11px; font-weight: 600; line-height: 1.5; }
+.fields label, .fullField { display: block; font-size: 11px; font-weight: 700; line-height: 1.5; }
 .fields label > span, .fullField > span { color: #537f47; }
 .formCard input:not([type="checkbox"]), .formCard select, .formCard textarea { display: block; width: 100%; min-width: 0; border: 1px solid #d4dece; border-radius: 6px; padding: 12px; margin-top: 7px; background: #fff; color: #213b2b; font-size: 12px; line-height: 1.5; transition: border-color .2s, box-shadow .2s; }
 .formCard input::placeholder, .formCard textarea::placeholder { color: #788375; opacity: 1; }
@@ -41,7 +41,7 @@
 .formCard input:focus, .formCard select:focus, .formCard textarea:focus { outline: 2px solid #57854a; outline-offset: 2px; }
 .formCard textarea { resize: vertical; min-height: 105px; }
 .needs { padding: 0; border: 0; margin: 20px 0; min-width: 0; }
-.needs legend { font-size: 11px; font-weight: 600; margin-bottom: 10px; }
+.needs legend { font-size: 11px; font-weight: 700; margin-bottom: 10px; }
 .needs > div { display: flex; flex-wrap: wrap; gap: 7px; }
 .needs label { cursor: pointer; position: relative; }
 .needs input { position: absolute; opacity: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
@@ -58,7 +58,7 @@
 .technical[open] .plus { transform: rotate(45deg); }
 .technical .fields { padding: 5px 0 20px; }
 .wide { grid-column: 1 / -1; }
-.submit { border: 0; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 14px 18px; background: #295b37; color: white; font-size: 13px; font-weight: 600; cursor: pointer; transition: background .2s; }
+.submit { border: 0; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 14px 18px; background: #295b37; color: white; font-size: 13px; font-weight: 700; cursor: pointer; transition: background .2s; }
 .submit:hover { background: #1d4728; }
 .submit svg { width: 18px; height: 18px; }
 .emailNote { font-size: 10px; text-align: center; color: #63745b; line-height: 1.7; margin: 12px 8px 0; }
@@ -67,13 +67,13 @@
 .sidebar { display: grid; gap: 22px; min-width: 0; }
 .contactCard { background: #ffffff06; border: 1px solid #ffffff20; border-radius: 16px; padding: clamp(22px, 2.5vw, 34px); }
 .contactCard .kicker { color: var(--mint); margin-bottom: 15px; }
-.contactCard h2, .checklist h2 { font-size: 25px; letter-spacing: -.035em; font-weight: 500; margin-bottom: 11px; }
+.contactCard h2, .checklist h2 { font-size: 25px; letter-spacing: -.035em; font-weight: 400; margin-bottom: 11px; }
 .contactCard > p, .checklist > p { font-size: 12px; color: #b5cabb; margin-bottom: 24px; }
 .contactLink { display: flex; align-items: center; gap: 12px; padding: 17px 0; border-bottom: 1px solid #ffffff18; }
 .contactIcon { display: grid; place-items: center; width: 37px; height: 37px; border: 1px solid #a8e7b52a; border-radius: 10px; color: var(--mint); background: #a8e7b50a; flex-shrink: 0; font-size: 21px; }
 .contactLink > span:nth-child(2) { min-width: 0; }
 .contactLink small { display: block; color: #afc6b7; font-size: 8px; letter-spacing: .12em; margin-bottom: 6px; }
-.contactLink strong { display: block; font-size: 12px; font-weight: 500; overflow-wrap: anywhere; }
+.contactLink strong { display: block; font-size: 12px; font-weight: 400; overflow-wrap: anywhere; }
 .contactLink > svg { margin-left: auto; width: 15px; height: 15px; color: #9fc5a9; transform: rotate(-40deg); }
 .contactLink:hover strong { color: var(--mint); text-decoration: underline; }
 .location { display: flex; align-items: center; gap: 9px; font-size: 11px; color: #b5cabb; margin-top: 21px; }
@@ -84,18 +84,18 @@
 .checklist ul { list-style: none; padding: 0; margin: 0; }
 .checklist li { display: flex; gap: 12px; margin-bottom: 19px; }
 .check { display: grid; place-items: center; flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%; background: #a8e7b511; color: var(--mint); font-size: 10px; margin-top: 2px; }
-.checklist li strong { font-size: 12px; font-weight: 500; display: block; }
+.checklist li strong { font-size: 12px; font-weight: 400; display: block; }
 .checklist li p { color: #bbcebf; font-size: 11px; line-height: 1.6; margin: 5px 0 0; }
 .tip { border-top: 1px solid #ffffff1c; padding-top: 19px; display: flex; gap: 10px; }
 .tip svg { color: var(--mint); width: 17px; height: 17px; margin-top: 3px; }
 .tip p { font-size: 11px; line-height: 1.7; color: #c4d7c8; margin: 0; }
 .nextSteps { border-top: 1px solid #ffffff21; margin-top: 49px; padding-top: 30px; }
 .nextSteps .kicker { color: #a6c1ae; font-size: 8px; }
-.nextSteps h2 { font-size: 25px; font-weight: 500; margin: 9px 0 26px; letter-spacing: -.025em; }
+.nextSteps h2 { font-size: 25px; font-weight: 400; margin: 9px 0 26px; letter-spacing: -.025em; }
 .nextSteps ol { padding: 0; margin: 0; list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .nextSteps li { display: flex; gap: 14px; }
 .nextSteps li > span { color: var(--mint); font-size: 12px; padding-top: 3px; }
-.nextSteps h3 { font-size: 13px; font-weight: 500; margin-bottom: 6px; }
+.nextSteps h3 { font-size: 13px; font-weight: 400; margin-bottom: 6px; }
 .nextSteps p { font-size: 11px; color: #b0c4b6; margin: 0; line-height: 1.8; }
 @media (max-width: 1000px) { .hero { grid-template-columns: 1fr; } .heroMark { display: none; } .contactGrid { grid-template-columns: 1.2fr 1fr; gap: 18px; } .formHeader { align-items: flex-start; } }
 @media (max-width: 780px) { .inner { padding-top: 38px; } .contactGrid { grid-template-columns: 1fr; } .sidebar { grid-template-columns: 1fr 1fr; gap: 18px; } .contactLink > svg { display: none; } .nextSteps ol { grid-template-columns: 1fr; gap: 22px; } }

@@ -21,7 +21,7 @@ export default function GasReferencePage() {
           </div>
           <GasCards />
           <div className="section-intro gases-intro">
-            <h2>Gas reference</h2>
+            <h2>Gas reference</h2>  
           </div>
 
           <div

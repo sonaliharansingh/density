@@ -11,7 +11,7 @@
 }
 
 .page + :global(.site-footer) {
-  padding-top: 24px;
+  padding-top: 8px;
 }
 
 .srOnly {

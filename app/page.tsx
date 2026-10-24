@@ -36,8 +36,7 @@ export default function Home() {
           </p>
           <div className={styles.actions}>
             <Link className={styles.gasLink} href="/gases-treated" aria-label="Select your waste gas to see what ASTRA can do">
-              <span className={styles.gasPrompt}>Select your<br />waste gas to see</span>
-              <span className={styles.what}>what</span>
+              <span className={styles.gasPrompt}>Select your<br />waste gas<br />to see what</span>
               <span className={styles.gasLogo}>
                 <Image src={logo} alt="ASTRA" sizes="(max-width: 640px) 213px, 365px" />
               </span>

@@ -6,21 +6,30 @@ export default function GasReferencePage() {
     <main id="main-content" className="content-page gases-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
-          <h1>Gas Reference</h1>
-          <p className="page-hero-lede">Explore waste gas treatment details and chemical reference data.</p>
+          <h1>Gases Treated</h1>
+          <p className="page-hero-lede">
+            Explore waste gas treatment details and chemical reference data.
+          </p>
         </div>
       </section>
 
       <section className="gases-section">
         <div className="header-container">
-          <div className="section-intro"><h2>Select your waste gas</h2><p>Open a card to explore its treatment details.</p></div>
+          <div className="section-intro">
+            <h2>Select your waste gas</h2>
+            <p>Open a card to explore its treatment details.</p>
+          </div>
           <GasCards />
           <div className="section-intro gases-intro">
             <h2>Gas reference</h2>
-            <p className="table-scroll-hint">Scroll horizontally to see all columns.</p>
           </div>
 
-          <div className="gases-table-wrap" role="region" aria-label="Gases treated table" tabIndex={0}>
+          <div
+            className="gases-table-wrap"
+            role="region"
+            aria-label="Gases treated table"
+            tabIndex={0}
+          >
             <table className="gases-table">
               <thead>
                 <tr>

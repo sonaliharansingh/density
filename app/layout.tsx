@@ -20,8 +20,8 @@ export default function RootLayout({
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <Header />
-        <InterestButton />
         {children}
+        <InterestButton />
         <Footer />
       </body>
     </html>

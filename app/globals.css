@@ -282,6 +282,9 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .section-intro { margin-bottom: 30px; }
 .section-intro h2 { font-size: var(--font-section-title); margin-bottom: 12px; }
 .section-intro p { color: var(--muted); font-size: var(--font-body); }
+.gas-reference-promo { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 7px; margin-top: 34px; color: var(--text); font-size: clamp(18px, 1.8vw, 25px); line-height: 1.25; text-decoration: underline; text-underline-offset: 4px; }
+.gas-reference-promo img { display: block; width: 180px; height: auto; }
+.gas-reference-promo:focus-visible { border-radius: 3px; }
 .gases-intro { margin-top: 64px; }
 .tech-benefits { display: grid; gap: 4px; max-width: 900px; margin: 0; padding: 0; list-style: none; }
 .tech-benefit { display: grid; grid-template-columns: 18px minmax(0,1fr); align-items: start; gap: 7px; }
@@ -301,7 +304,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .advantages-table { min-width: 690px; }
 .gases-table thead, .advantages-table thead { background: var(--green-dark); color: #edf3e9; }
 .gases-table th, .gases-table td, .advantages-table th, .advantages-table td { padding: 19px 22px; border-bottom: 1px solid var(--border); }
-.gases-table thead th { font-size: var(--font-small); font-weight: 500; }
+.gases-table thead th { font-size: var(--font-body); font-weight: 700; }
 .advantages-table thead th { font-size: var(--font-body); font-weight: 700; }
 .gases-table tbody th, .advantages-table tbody th { font-weight: 600; }
 .gases-table tbody tr:last-child > *, .advantages-table tbody tr:last-child > * { border-bottom: none; }

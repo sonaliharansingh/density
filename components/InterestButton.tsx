@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 export default function InterestButton() {
   const pathname = usePathname();
 
-  if (pathname === "/") return null;
+  if (pathname === "/" || pathname === "/contact") return null;
 
   return (
     <div className="global-interest-slot">

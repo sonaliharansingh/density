@@ -3,9 +3,11 @@ import Link from "next/link";
 import machine from "@/public/images/Astra Line Drawing.png";
 import logo from "@/public/images/ASTRA Logo.png";
 import styles from "./page.module.css";
+import FooterBanner from "@/components/FooterBanner";
 
 export default function Home() {
   return (
+    <>
     <main id="main-content" className={styles.page}>
       <h1 className={styles.srOnly}>ASTRA Waste Gas Treatment System</h1>
 
@@ -55,7 +57,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </main>
+    <FooterBanner />
+    </>
   );
 }

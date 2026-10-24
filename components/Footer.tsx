@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import companyLogo from "@/public/images/densitY_Sustaintech_Logo.png";
-import FooterBanner from "./FooterBanner";
 
 const usefulLinks = [
   { label: "Home", href: "/" },
@@ -27,7 +26,6 @@ export default function Footer() {
         </div>
         <Link href="/contact" className="footer-contact-button">Contact Us <span aria-hidden="true">→</span></Link>
       </div> */}  
-      <FooterBanner />
       <div className="header-container">
         <div className="footer-main">
           <section

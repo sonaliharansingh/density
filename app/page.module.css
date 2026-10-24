@@ -10,10 +10,6 @@
   font-family: var(--font-site);
 }
 
-.page + :global(.site-footer) {
-  padding-top: 8px;
-}
-
 .srOnly {
   position: absolute;
   width: 1px;

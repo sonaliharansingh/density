@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import machine from "@/public/images/Astra Line Drawing.png";
+import machine from "@/public/images/ASTRA Main Image.png";
 import logo from "@/public/images/ASTRA Logo.png";
 import styles from "./page.module.css";
 import FooterBanner from "@/components/FooterBanner";
@@ -14,28 +14,36 @@ export default function Home() {
       <section id="about" className={styles.content} aria-label="About ASTRA">
         <div className={styles.intro}>
           <p>
-              ASTRA is an advanced VUV-based gas purification system designed to treat and
-              break down hazardous gaseous pollutants generated during laboratory and
-              industrial processes. Using Vacuum Ultraviolet (VUV) photochemical
-              technology, ASTRA helps transform harmful organic pollutants into simpler,
-              less harmful by-products before treated air is released.
+            ASTRA™ is an advanced, non-combustion technology for treating volatile
+            organic compounds (VOCs) and hazardous gaseous pollutants. Using
+            microwave-assisted UV photocatalytic oxidation, it breaks down pollutant
+            molecules at low operating temperatures of below 70°C, without fuel,
+            flames, or water. With treatment efficiency exceeding 95%, ASTRA™ transforms
+            harmful emissions into less harmful byproducts, without generating
+            secondary liquid or solid waste.
           </p>
-          <Image className={styles.machine} src={machine} alt="ASTRA gas purification unit with air inlet, control panels and outlet fan" sizes="(max-width: 640px) 80vw, (max-width: 1280px) 44vw, 560px" />
+          <Image className={styles.machine} src={machine} alt="ASTRA industrial gas treatment system and ventilation ducting" sizes="(max-width: 640px) 85vw, (max-width: 1280px) 44vw, 560px" />
         </div>
 
-        <p className={styles.description}>
-          Designed for efficient, continuous operation, ASTRA provides an environmentally
-          responsible approach to gas treatment, helping laboratories and industrial
-          facilities improve air quality while reducing their environmental footprint.
-        </p>
-
         <div id="applications" className={styles.bottom}>
-          <p>
-            With its compact design, low maintenance requirements and high pollutant-removal
-            efficiency, ASTRA is suited for analytical laboratories, research facilities
-            and industrial applications where effective treatment of gaseous emissions
-            is essential.
-          </p>
+          <section className={styles.features} aria-label="ASTRA treatment features">
+          <article className={styles.feature}>
+            <h2>Flexible Deployment</h2>
+            <p>Available as fixed plant skids, containerized mobile (OTG) units, compact over-the-top systems, and in-situ solutions for VOC treatment in fume hoods and workbench ventilation systems.</p>
+          </article>
+          <article className={styles.feature}>
+            <h2>Low-Temperature Processing (&lt;70°C)</h2>
+            <p>Treats hazardous organic and inorganic gaseous emissions without combustion, open flames, or associated fire hazards.</p>
+          </article>
+          <article className={styles.feature}>
+            <h2>&gt;95% Treatment Efficiency</h2>
+            <p>Effectively degrades complex VOC mixtures, including ketones, aromatic compounds, and chlorinated species.</p>
+          </article>
+          <article className={styles.feature}>
+            <h2>Zero Secondary Waste</h2>
+            <p>Eliminates wastewater generation and the need for hazardous spent-carbon disposal.</p>
+          </article>
+          </section>
           <div className={styles.actions}>
             <Link className={styles.gasLink} href="/gases-treated" aria-label="Select your waste gas to see what ASTRA can do">
               <span className={styles.gasPrompt}>Select your<br />waste gas<br />to see what</span>

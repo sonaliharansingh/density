@@ -44,19 +44,12 @@ export default function Home() {
             </Link>
             <div className="site-footer-actions">
               <a href="/assets/astra-brochure.pdf" download="ASTRA-Brochure.pdf" className="site-brochure-button">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
-                </svg>
-                <span className="site-brochure-copy">
-                  <span className="site-brochure-title">Download Brochure</span>
-                  <span className="site-brochure-subtitle">Explore our solutions</span>
-                </span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" /></svg>
+                <span className="site-brochure-copy"><span className="site-brochure-title">Download Brochure</span><span className="site-brochure-subtitle">Explore our solutions</span></span>
               </a>
               <Link href="/contact" className="footer-contact-button">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M20 11.5a7.5 7.5 0 0 1-7.5 7.5 8 8 0 0 1-3.4-.8L4 20l1.3-4.1a7.5 7.5 0 1 1 14.7-4.4Z" />
-                </svg>
-                <span>Contact Us</span>
+                <span>I’m Interested</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
               </Link>
             </div>
           </div>

@@ -1,34 +1,27 @@
 import Image from "next/image";
-import Icon from "@/components/Icon";
 
 const capabilities = [
   {
-    icon: "lab" as const,
     title: "Emission Compliance",
     description: "Meets industry emission standards and handles complex mixed exhaust gases.",
   },
   {
-    icon: "energy" as const,
     title: "Advanced Oxidation Technology",
     description: "Uses microwave and VUV light to break molecular bonds at room temperature.",
   },
   {
-    icon: "flow" as const,
     title: "Easy System Integration",
     description: "Integrates with PLC/DCS systems, with plug-and-play installation and simple maintenance.",
   },
   {
-    icon: "box" as const,
     title: "Flexible Modular Design",
     description: "Available as a standalone unit or modular setup to suit different industrial requirements.",
   },
   {
-    icon: "leaf" as const,
     title: "High Styrene Breakdown",
     description: "Achieves up to 99% styrene breakdown, with minimal byproduct risk.",
   },
   {
-    icon: "cost" as const,
     title: "Low Operating Costs",
     description: "Requires electricity and periodic UV lamp replacement for routine operation.",
   },
@@ -49,11 +42,15 @@ export default function TechnologyPage() {
           <ul className="tech-benefits">
             {capabilities.map((capability) => (
               <li className="tech-benefit" key={capability.title}>
-                <span className="tech-benefit-icon"><Icon name={capability.icon} /></span>
-                <div className="tech-benefit-copy">
-                  <h2>{capability.title}</h2>
-                  <p>{capability.description}</p>
-                </div>
+                <Image
+                  className="tech-benefit-icon"
+                  src="/images/Wave%20Icon.png"
+                  alt=""
+                  width={18}
+                  height={18}
+                  aria-hidden="true"
+                />
+                <p className="tech-benefit-copy">{capability.description}</p>
               </li>
             ))}
           </ul>

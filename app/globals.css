@@ -322,8 +322,8 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .advantage-product-image { width: 100%; max-width: 320px; height: auto; margin-left: auto; }
 /* Footer */
 .site-footer { padding: 0 0 12px; border-top: 2px solid transparent; border-image: linear-gradient(90deg, #397d17 0 82%, #d9955b 82% 100%) 1; background: #f1f6ed; color: #343a34; }
-.site-footer > .header-container { max-width: 1440px; padding-top: 4px; }
-.footer-main { display: grid; grid-template-columns: minmax(250px, 1.15fr) minmax(135px, .7fr) minmax(175px, .8fr) minmax(260px, 1.25fr); gap: clamp(22px, 2.6vw, 38px); padding: 0 0 20px; }
+.site-footer > .header-container { max-width: 1440px; padding: 4px clamp(18px, 3vw, 42px) 0; }
+.footer-main { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; padding: 0 0 20px; }
 .footer-company, .footer-link-column, .footer-location { min-width: 0; }
 .footer-brand { display: block; width: min(100%, 230px); margin: 0 0 12px; }
 .footer-company-logo { display: block; width: 100%; height: auto; }

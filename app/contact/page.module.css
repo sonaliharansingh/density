@@ -1,4 +1,4 @@
-.page { --mint: #a8e7b5; --ink: #173b2b; color: #f3f7f1; background: #102e23; background-image: radial-gradient(ellipse at 95% 0%, #2a57433d, transparent 48%); border-radius: 16px; overflow: hidden; }
+.page { --mint: #a8e7b5; --ink: #173b2b; color: #f3f7f1; background: #102e23; background-image: radial-gradient(ellipse at 95% 0%, #2a57433d, transparent 48%); border-radius: 16px; overflow: hidden; margin-bottom: 24px; }
 .inner { margin: 0 var(--content-inset); padding-block: 64px 46px; }
 .hero { display: grid; grid-template-columns: 1fr 220px; gap: 24px; align-items: center; margin-bottom: 46px; }
 .eyebrow { display: inline-flex; align-items: center; gap: 9px; font-size: 10px; font-weight: 700; letter-spacing: .16em; color: var(--mint); }

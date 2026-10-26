@@ -104,7 +104,7 @@
 
 .hero > *, .contactGrid > *, .sidebar > *, .nextSteps li > div { min-width: 0; }
 @media (min-width: 1001px) {
-  .contactGrid { align-items: stretch; }
+  .contactGrid { align-items: start; }
   .sidebar { grid-template-rows: auto 1fr; }
 }
 @media (max-width: 1000px) {
@@ -187,4 +187,69 @@
   .contactCard > p, .checklist > p, .contactLink strong, .checklist li strong { font-size: 15px; }
   .contactLink small { font-size: 11px; }
   .checklist li p, .tip p, .nextSteps p, .location { font-size: 14px; }
+}
+
+/* Match the responsive type scale used by the other route pages. */
+.page {
+  --font-body: clamp(18px, calc(1.5vw + 2px), 24px);
+  --font-small: clamp(14px, calc(1vw + 2px), 16px);
+  --font-card-title: clamp(20px, calc(1.7vw + 2px), 26px);
+  --font-section-title: clamp(28px, calc(2.6vw + 2px), 40px);
+  --font-page-title: clamp(34px, calc(3.5vw + 2px), 54px);
+  font-size: var(--font-body);
+}
+
+.hero h1 { font-size: var(--font-page-title); font-weight: 700; }
+.hero p,
+.formIntro,
+.contactCard > p,
+.checklist > p,
+.checklist li p,
+.tip p,
+.nextSteps p,
+.location { font-size: var(--font-body); }
+.contactCard h2,
+.checklist h2,
+.nextSteps h2 { font-size: var(--font-section-title); }
+.nextSteps h3,
+.formCard h2 { font-size: var(--font-card-title); }
+.eyebrow,
+.tags > span,
+.kicker,
+.time,
+.formSectionTitle,
+.fields label,
+.fullField,
+.needs legend,
+.technical summary,
+.submit,
+.emailNote,
+.feedback,
+.contactLink strong,
+.contactLink small,
+.sectionLabel,
+.checklist li strong,
+.nextSteps li > span { font-size: var(--font-small); }
+.formCard input:not([type="checkbox"]),
+.formCard select,
+.formCard textarea { font-size: var(--font-body); }
+
+@media (max-width: 640px) {
+  .hero h1 { font-size: var(--font-page-title); }
+  .hero p,
+  .formIntro,
+  .contactCard > p,
+  .checklist > p,
+  .checklist li p,
+  .tip p,
+  .nextSteps p,
+  .location,
+  .formCard input:not([type="checkbox"]),
+  .formCard select,
+  .formCard textarea { font-size: var(--font-body); }
+  .contactCard h2,
+  .checklist h2,
+  .nextSteps h2 { font-size: var(--font-section-title); }
+  .nextSteps h3,
+  .formCard h2 { font-size: var(--font-card-title); }
 }

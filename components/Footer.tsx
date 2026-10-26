@@ -25,7 +25,7 @@ export default function Footer() {
           <h2>Find the right ASTRA solution.</h2>
         </div>
         <Link href="/contact" className="footer-contact-button">Contact Us <span aria-hidden="true">→</span></Link>
-      </div> */}  
+      </div> */}
       <div className="header-container">
         <div className="footer-main">
           <section
@@ -41,15 +41,15 @@ export default function Footer() {
               />
             </Link>
             <address>
-              Density Pharmachem Private Limited.
+              Density Pharmachem Private Limited
               <br />
               Sy No 615/A &amp; 624/2/1, Pudur Village
               <br />
-              Medchal-Malkajgiri District,
+              Medchal-Malkajgiri District
               <br />
               Hyderabad, Telangana - 501 401
               <br />
-              India.
+              India
             </address>
             <p className="footer-contact-line">
               <strong>Phone:</strong>{" "}

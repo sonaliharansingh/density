@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Myriad Pro Condensed";
-  src: url("/fonts/MyriadPro-Cond.otf") format("opentype");
+  src: url("/fonts/MyriadPro-LightCond_0.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Myriad Pro Condensed";
-  src: url("/fonts/MyriadPro-BoldCond.otf") format("opentype");
+  src: url("/fonts/MyriadPro-SemiboldCond.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -109,8 +109,8 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   justify-content: center;
   gap: 12px;
   width: 232px;
-  min-height: 78px;
-  padding: 12px 20px;
+  min-height: 52px;
+  padding: 0 20px;
   border: 1px solid var(--green);
   border-radius: 13px;
   background: white;
@@ -131,7 +131,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .site-brochure-button:active, .footer-contact-button:active { transform: translateY(0); }
 @media (max-width: 480px) {
   .site-footer-actions { gap: 10px; }
-  .site-brochure-button { width: min(232px, 100%); min-height: 72px; padding: 10px 16px; }
+  .site-brochure-button { width: min(232px, 100%); min-height: 48px; padding: 0 16px; }
   .site-brochure-title { font-size: 17px; }
   .site-brochure-subtitle { font-size: 14px; }
   .site-footer-actions .footer-contact-button, .actions .footer-contact-button { min-height: 48px; padding: 9px 20px; font-size: 17px; }

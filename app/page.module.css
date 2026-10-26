@@ -181,7 +181,7 @@
   .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .actions { width: 100%; max-width: 360px; }
   .footerActions { gap: 10px; }
-  .footerActions :global(.site-brochure-button) { min-height: 72px; padding: 10px; gap: 8px; }
+  .footerActions :global(.site-brochure-button) { min-height: 48px; padding: 0 10px; gap: 8px; }
   .footerActions :global(.site-brochure-title) { font-size: 17px; }
   .footerActions :global(.site-brochure-subtitle) { font-size: 14px; }
   .footerActions :global(.footer-contact-button) { min-height: 48px; padding: 9px 10px; gap: 7px; font-size: clamp(14px, 3.6vw, 17px); white-space: normal; }

@@ -136,8 +136,26 @@
   top: 7%;
   left: 0;
   width: 100%;
-  font-size: 9cqw;
   line-height: 1;
+}
+
+.gasPromptSmall,
+.gasPromptMain {
+  display: block;
+}
+
+.gasPromptSmall {
+  font-size: 7cqw;
+  font-weight: 300;
+  letter-spacing: 0.07em;
+  line-height: 1.12;
+}
+
+.gasPromptMain {
+  font-size: 9.5cqw;
+  font-weight: 700;
+  letter-spacing: 0.055em;
+  line-height: 1.02;
 }
 
 .gasLogo {

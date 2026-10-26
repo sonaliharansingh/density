@@ -48,11 +48,9 @@ export default function Home() {
                 aria-label="Select your waste gas to see what ASTRA can do"
               >
                 <span className={styles.gasPrompt}>
-                  Select your
-                  <br />
-                  waste gas
-                  <br />
-                  to see what
+                  <span className={styles.gasPromptSmall}>Select your</span>
+                  <span className={styles.gasPromptMain}>waste gas</span>
+                  <span className={styles.gasPromptSmall}>to see what</span>
                 </span>
                 <span className={styles.gasLogo}>
                   <Image

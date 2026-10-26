@@ -18,7 +18,7 @@ const installations = [
   {
     industry: "Specialty Chemical",
     icon: "/images/Specialty Chemical Icon.png",
-    image: "/images/Specialty Chemical Image.png",
+    image: "/images/ASTRA_Spl Chemical.png",
     products:
       "Nitrosylsulfuric acid, Acrylonitrile, m-Aminoacetanilide, 1-Aminoanthraquinone, N-Diallyl-2-methoxy-5-acetaminoaniline, etc.",
     gases: "VOCs",

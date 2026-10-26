@@ -14,9 +14,6 @@ export default function GasReferencePage() {
 
       <section className="gases-section">
         <div className="header-container">
-          <div className="section-intro gases-intro">
-            {/* <h2>Gas reference</h2> */}
-          </div>
 
           <div
             className="gases-table-wrap"

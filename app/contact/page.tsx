@@ -73,7 +73,7 @@ export default function ContactPage() {
                 <span className={styles.contactIcon}>@</span>
                 <span>
                   <small>EMAIL US</small>
-                  <strong>sonaliharansingh@gmail.com</strong>
+                  <strong>sales@densitypc.com</strong>
                 </span>
                 <Icon name="arrow" />
               </a>
@@ -93,7 +93,7 @@ export default function ContactPage() {
                 </span>
                 <span>
                   <small>CALL US</small>
-                  <strong>+91 82609 00659</strong>
+                  <strong>+91 99897 77910</strong>
                 </span>
                 <Icon name="arrow" />
               </a>
@@ -138,7 +138,6 @@ export default function ContactPage() {
                   </li>
                 ))}
               </ul>
-   
             </section>
           </aside>
         </div>

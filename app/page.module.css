@@ -32,9 +32,9 @@
 
 .intro {
   display: grid;
-  grid-template-columns: 1fr 1.04fr;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
   gap: clamp(16px, 2vw, 28px);
-  align-items: center;
+  align-items: start;
 }
 
 .intro > *, .bottom > * { min-width: 0; }
@@ -42,9 +42,11 @@
 .machine {
   display: block;
   width: 100%;
-  max-width: 560px;
-  justify-self: center;
+  max-width: 640px;
+  justify-self: end;
   height: auto;
+  aspect-ratio: 1.7;
+  object-fit: cover;
   border-radius: 18px;
 }
 
@@ -53,12 +55,12 @@
   justify-items: center;
   gap: 12px;
   width: 100%;
-  max-width: 480px;
+  max-width: 400px;
   justify-self: center;
 }
 
-.actions :global(.site-brochure-button),
-.actions :global(.footer-contact-button) {
+.footerActions :global(.site-brochure-button),
+.footerActions :global(.footer-contact-button) {
   flex: 1 1 0;
   width: auto;
   min-width: min-content;
@@ -66,31 +68,42 @@
   white-space: normal;
 }
 
-.actions :global(.site-brochure-title) { white-space: normal; }
+.footerActions :global(.site-brochure-title) { white-space: normal; }
 
-.feature h2 {
-  margin: 0 0 5px;
-  font-size: 1em;
-  line-height: 1.35;
-  font-weight: 700;
+.bottom .footerActions {
+  grid-column: 1 / -1;
+  justify-content: flex-end;
+  margin-top: 2px;
 }
 
-.feature p {
-  font-size: 0.94em;
-}
-
-.features {
+.highlights {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(14px, 2vw, 28px);
+}
+
+.highlight h2 {
+  margin: 0 0 3px;
+  font-size: 0.95em;
+  line-height: 1.2;
+}
+
+.highlight p {
+  font-size: 0.82em;
+  line-height: 1.35;
+}
+
+.deployment h2 {
+  margin: 0 0 4px;
 }
 
 .bottom {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
-  gap: clamp(16px, 3vw, 44px);
-  align-items: center;
-  margin-top: 12px;
+  gap: clamp(12px, 1.5vw, 24px);
+  align-items: start;
+  margin-top: clamp(10px, 1.2vw, 18px);
   margin-bottom: 12px;
 }
 
@@ -101,10 +114,10 @@
   position: relative;
   container-type: inline-size;
   width: 100%;
-  max-width: 480px;
+  max-width: 400px;
   justify-self: center;
   margin-top: 0;
-  aspect-ratio: 392 / 225;
+  aspect-ratio: 392 / 195;
   padding: 0;
   border-radius: 36px;
   background: var(--green);
@@ -151,21 +164,26 @@
   .page { --font-body: clamp(18px, 2.5vw, 22px); --line-body: 1.55; }
   .bottom { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .machine { max-width: 480px; }
-  .actions { max-width: 480px; }
+  .actions { max-width: 400px; }
 }
 
 @media (max-width: 640px) {
   .page { --font-body: clamp(16px, 2.8vw, 18px); --line-body: 1.5; }
-  .actions { width: 100%; max-width: 420px; gap: 16px; margin-top: 8px; }
-  .actions :global(.site-footer-actions) { gap: 10px; }
-  .actions :global(.site-brochure-button) { min-height: 72px; padding: 10px; gap: 8px; }
-  .actions :global(.site-brochure-title) { font-size: 17px; }
-  .actions :global(.site-brochure-subtitle) { font-size: 14px; }
-  .actions :global(.footer-contact-button) { min-height: 48px; padding: 9px 10px; gap: 7px; font-size: clamp(14px, 3.6vw, 17px); white-space: normal; }
+  .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .actions { width: 100%; max-width: 360px; }
+  .footerActions { gap: 10px; }
+  .footerActions :global(.site-brochure-button) { min-height: 72px; padding: 10px; gap: 8px; }
+  .footerActions :global(.site-brochure-title) { font-size: 17px; }
+  .footerActions :global(.site-brochure-subtitle) { font-size: 14px; }
+  .footerActions :global(.footer-contact-button) { min-height: 48px; padding: 9px 10px; gap: 7px; font-size: clamp(14px, 3.6vw, 17px); white-space: normal; }
 }
 
 @media (max-width: 560px) {
   .intro, .bottom { grid-template-columns: 1fr; gap: 16px; }
-  .machine { width: 85%; margin: 0 auto; }
+  .machine { width: 85%; height: auto; aspect-ratio: auto; margin: 0 auto; }
   .actions { justify-self: center; }
+}
+
+@media (max-width: 380px) {
+  .highlights { grid-template-columns: 1fr; }
 }

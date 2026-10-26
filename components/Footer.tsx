@@ -74,9 +74,6 @@ export default function Footer() {
             className="footer-location"
             aria-labelledby="footer-location-title"
           >
-            <h2 className="footer-heading" id="footer-location-title">
-              Locate Us
-            </h2>
             <a
               className="footer-map-link"
               href="https://www.google.com/maps/search/?api=1&query=Density+Pharmachem+Private+Limited%2C+Pudur%2C+Hyderabad%2C+Telangana+501401"

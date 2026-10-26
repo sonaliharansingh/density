@@ -1,5 +1,4 @@
 import { gasesData } from "@/lib/gases";
-import GasCards from "@/components/GasCards";
 
 export default function GasReferencePage() {
   return (
@@ -15,13 +14,8 @@ export default function GasReferencePage() {
 
       <section className="gases-section">
         <div className="header-container">
-          <div className="section-intro">
-            <h2>Select your waste gas</h2>
-            <p>Open a card to explore its treatment details.</p>
-          </div>
-          <GasCards />
           <div className="section-intro gases-intro">
-            <h2>Gas reference</h2>  
+            {/* <h2>Gas reference</h2> */}
           </div>
 
           <div

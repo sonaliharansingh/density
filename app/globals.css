@@ -54,7 +54,7 @@ p { line-height: var(--line-body); }
 .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
 /* Shared banner and navigation, used by every route. */
 .site-header { margin-bottom: 32px; }
-.global-interest-slot { display: flex; justify-content: flex-end; width: calc(100% - 2 * var(--content-inset)); max-width: var(--container); margin: 0 auto 24px; }
+.global-interest-slot { display: flex; justify-content: flex-end; width: calc(100% - 2 * var(--content-inset)); max-width: var(--container); margin: 16px auto 24px; }
 .site-menu-toggle { display: none; }
 .mobile-menu-wrap { display: none; position: relative; }
 .mobile-menu { position: absolute; top: calc(100% + 10px); right: 0; z-index: 100; display: grid; gap: 4px; width: min(260px, 100%); max-height: 70dvh; overflow-y: auto; padding: 8px; border: 1px solid var(--border); border-radius: 12px; background: var(--white); color: var(--text); box-shadow: 0 4px 8px #16320f08, 0 12px 32px #16320f1a; opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-6px) scale(.98); transform-origin: top right; transition: opacity 160ms ease, transform 180ms ease, visibility 0s linear 180ms; }
@@ -276,6 +276,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .technology-page .page-hero-lede { max-width: none; white-space: nowrap; }
 .page-section, .gases-section, .advantages-section { padding-block: 64px; }
 .page-section-tint { background: var(--green-light); border-block: 1px solid var(--border); }
+.technology-page > .page-section-tint { padding-block: 32px; }
 .technology-pretreatment-section { margin-top: 32px; }
 .section-intro { margin-bottom: 30px; }
 .section-intro h2 { font-size: var(--font-section-title); margin-bottom: 12px; }
@@ -288,7 +289,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .tech-benefit { display: grid; grid-template-columns: 18px minmax(0,1fr); align-items: start; gap: 7px; }
 .tech-benefit-icon { display: block; width: 18px; height: 18px; margin-top: 8px; object-fit: contain; }
 .tech-benefit-copy { margin: 0; color: #080808; font-size: var(--font-body); line-height: 1.5; }
-.principle-panel { display: grid; grid-template-columns: minmax(0,1fr) 150px; align-items: center; gap: 50px; padding: 30px; background: white; border: 1px solid var(--border); border-radius: 8px; }
+.principle-panel { display: grid; grid-template-columns: minmax(0,1fr) 150px; align-items: center; gap: 50px; padding: 24px; background: white; border: 1px solid var(--border); border-radius: 8px; }
 .flow-image { display: block; width: 100%; height: auto; }
 .flow-divider { display: none; }
 .proprietary-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 22px; }

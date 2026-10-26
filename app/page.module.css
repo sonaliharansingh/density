@@ -1,6 +1,9 @@
 .page {
-  --font-body: clamp(22px, 2.4vw, 34px);
-  --line-body: 1.45;
+  --font-body: clamp(18px, calc(1.5vw + 2px), 24px);
+  --font-small: clamp(14px, calc(1vw + 2px), 16px);
+  --font-card-title: clamp(20px, calc(1.7vw + 2px), 26px);
+  --font-section-title: clamp(28px, calc(2.6vw + 2px), 40px);
+  --font-page-title: clamp(34px, calc(3.5vw + 2px), 54px);
   container-type: inline-size;
   width: 100%;
   margin: 0;
@@ -8,6 +11,7 @@
   background: #fff;
   color: var(--text);
   font-family: var(--font-site);
+  font-size: var(--font-body);
 }
 
 .srOnly {
@@ -161,14 +165,19 @@
 }
 
 @media (max-width: 900px) {
-  .page { --font-body: clamp(18px, 2.5vw, 22px); --line-body: 1.55; }
   .bottom { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .machine { max-width: 480px; }
   .actions { max-width: 400px; }
 }
 
 @media (max-width: 640px) {
-  .page { --font-body: clamp(16px, 2.8vw, 18px); --line-body: 1.5; }
+  .page {
+    --font-body: 16px;
+    --font-small: 14px;
+    --font-card-title: 20px;
+    --font-section-title: clamp(24px, 5vw, 30px);
+    --font-page-title: clamp(28px, 6vw, 36px);
+  }
   .highlights { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .actions { width: 100%; max-width: 360px; }
   .footerActions { gap: 10px; }

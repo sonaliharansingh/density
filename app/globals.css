@@ -80,7 +80,7 @@ p { line-height: var(--line-body); }
 .site-banner { display: block; }
 .site-banner-mobile { display: none !important; }
 .site-banner img, .site-footer-banner { display: block; width: 100%; height: auto; }
-.site-navigation { display: grid; width: 74%; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(8px, 1vw, 16px); margin-top: 12px; }
+.site-navigation { display: grid; width: 72.5%; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(8px, 1vw, 16px); margin-top: 12px; }
 .site-navigation a { position: relative; display: flex; align-items: center; justify-content: center; min-height: clamp(40px, 3.2vw, 50px); padding: 5px 8px; border: 1px solid var(--green-dark); border-radius: 9px; background: var(--green); color: white; font-family: var(--font-site); font-size: clamp(14px, 1.1vw, 20px); font-weight: 700; line-height: 1.2; text-align: center; text-transform: uppercase; white-space: nowrap; box-shadow: 0 2px 7px #263d170d; }
 .site-navigation a { transition: color 200ms ease, border-color 200ms ease, background-color 200ms ease, transform 200ms ease, box-shadow 200ms ease; }
 @media (hover: hover) {

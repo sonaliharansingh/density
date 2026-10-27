@@ -131,6 +131,7 @@
   grid-column: 2;
   grid-row: 2;
   align-self: center;
+  flex-wrap: wrap;
 }
 
 .gasLink:hover { background: var(--green-dark); }
@@ -230,8 +231,8 @@
   .footerActions :global(.footer-contact-button) { min-height: 48px; padding: 9px 10px; gap: 7px; font-size: clamp(14px, 3.6vw, 17px); white-space: normal; }
 }
 
-@media (max-width: 560px) {
-  .intro, .bottom { grid-template-columns: 1fr; gap: 16px; }
+@media (max-width: 700px) {
+  .intro, .bottom { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .highlights, .actions, .deployment, .bottom .footerActions {
     grid-column: 1;
     grid-row: auto;
@@ -240,10 +241,17 @@
   .deployment { order: 2; }
   .actions { order: 3; }
   .bottom .footerActions { order: 4; }
-  .machine { width: 85%; height: auto; aspect-ratio: auto; margin: 0 auto; }
+  .machine { width: 100%; max-width: 560px; height: auto; aspect-ratio: 1.7; margin: 0 auto; }
   .actions { justify-self: center; }
+  .bottom .footerActions { justify-content: center; }
 }
 
 @media (max-width: 380px) {
   .highlights { grid-template-columns: 1fr; }
+  .bottom .footerActions :global(.site-brochure-button),
+  .bottom .footerActions :global(.footer-contact-button) {
+    flex: 1 1 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
 }

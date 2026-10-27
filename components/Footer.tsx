@@ -27,7 +27,7 @@ export default function Footer() {
               />
             </Link>
             <address>
-              Density Pharmachem Private Limited
+              <strong>Density Pharmachem Private Limited</strong>
               <br />
               Sy No 615/A &amp; 624/2/1, Pudur Village
               <br />
@@ -39,7 +39,7 @@ export default function Footer() {
             </address>
             <p className="footer-contact-line">
               <strong>Phone:</strong>{" "}
-              <a href="tel:+919898991174">+91 98989 91174</a>
+              <a href="tel:+919898991174">+91 99897 77910</a>
             </p>
             <p className="footer-contact-line">
               <strong>Email:</strong>{" "}

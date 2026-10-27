@@ -1,4 +1,5 @@
 .section { margin-bottom: 56px; }
+.section .kicker { letter-spacing: .1em; }
 .panel { --port-center: 57.5%; }
 .panel > * { min-width: 0; }
 .select { min-width: 0; max-width: 100%; }

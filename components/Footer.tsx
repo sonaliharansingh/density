@@ -43,7 +43,7 @@ export default function Footer() {
             </p>
             <p className="footer-contact-line">
               <strong>Email:</strong>{" "}
-              <a href="mailto:sales@densitypharmachem.com">
+              <a href="mailto:sales@densityc.com">
                 sales@densitypharmachem.com
               </a>
             </p>

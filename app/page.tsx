@@ -32,15 +32,6 @@ export default function Home() {
           </div>
 
           <div id="applications" className={styles.bottom}>
-            <article className={styles.deployment}>
-              <h2>Flexible Deployment</h2>
-              <p>
-                Available as fixed plant skids, containerized mobile (OTG)
-                units, compact over-the-top (OTT) systems and in-situ solutions
-                for VOC treatment in fume hoods and workbench ventilation
-                systems.
-              </p>
-            </article>
             <div className={styles.actions}>
               <Link
                 className={styles.gasLink}
@@ -86,6 +77,15 @@ export default function Home() {
                 <p>
                   Eliminates wastewater generation and the need for hazardous
                   spent-carbon disposal.
+                </p>
+              </article>
+              <article className={styles.highlight}>
+                <h2>Flexible Deployment</h2>
+                <p>
+                  Available as fixed plant skids, containerized mobile (OTG)
+                  units, compact over-the-top (OTT) systems and in-situ solutions
+                  for VOC treatment in fume hoods and workbench ventilation
+                  systems.
                 </p>
               </article>
             </section>

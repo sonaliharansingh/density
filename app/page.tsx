@@ -67,19 +67,20 @@ export default function Home() {
               aria-label="ASTRA treatment highlights"
             >
               <article className={styles.highlight}>
-                <h2>&gt;95% Treatment Efficiency</h2>
-                <p>
-                  Effectively degrades complex VOC mixtures, including ketones,
-                  aromatic compounds and chlorinated species.
-                </p>
-              </article>
-              <article className={styles.highlight}>
                 <h2>Low-Temperature Processing (&lt;70°C)</h2>
                 <p>
                   Treats hazardous organic and inorganic gaseous emissions
                   without combustion, open flames or associated fire hazards.
                 </p>
               </article>
+              <article className={styles.highlight}>
+                <h2>&gt;95% Treatment Efficiency</h2>
+                <p>
+                  Effectively degrades complex VOC mixtures, including ketones,
+                  aromatic compounds and chlorinated species.
+                </p>
+              </article>
+
               <article className={styles.highlight}>
                 <h2>Zero Secondary Waste</h2>
                 <p>

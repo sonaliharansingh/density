@@ -61,6 +61,18 @@
   .logoWrap { width: 110%; }
   .activeModel::after { right: 12px; left: 12px; }
 }
+@media (max-width: 520px) {
+  .featureLayout { grid-template-columns: minmax(0, 1fr); }
+  .featureColumn:nth-child(1) .bullets,
+  .featureColumn:nth-child(2) .photo,
+  .featureColumn:nth-child(1) .photo,
+  .featureColumn:nth-child(2) .bullets { grid-column: 1; }
+  .featureColumn:nth-child(1) .bullets { grid-row: 1; }
+  .featureColumn:nth-child(2) .photo { grid-row: 2; }
+  .featureColumn:nth-child(1) .photo { grid-row: 3; }
+  .featureColumn:nth-child(2) .bullets { grid-row: 4; }
+  .featureLayout .photo { max-width: 540px; justify-self: center; }
+}
 @media (prefers-reduced-motion: reduce) {
   .model, .interested { transition: none; }
   .solution { animation: none; }

@@ -14,6 +14,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Myriad Pro Condensed Bold";
+  src: url("/fonts/MyriadPro-BoldCond.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-site: "Myriad Pro Condensed", Arial, Helvetica, sans-serif;
   --font-body: clamp(16px, 1.5vw, 22px);
@@ -306,6 +314,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .gases-table thead th { font-size: var(--font-body); font-weight: 700; }
 .advantages-table thead th { font-size: var(--font-body); font-weight: 700; }
 .gases-table tbody th, .advantages-table tbody th { font-weight: 700; }
+.gases-table th, .advantages-table th { font-family: "Myriad Pro Condensed Bold", var(--font-site); }
 .gases-table tbody tr:last-child > *, .advantages-table tbody tr:last-child > * { border-bottom: none; }
 .gases-table tbody tr:nth-child(even), .advantages-table tbody tr:nth-child(even) { background: var(--green-light); }
 .formula-cell, .products-cell { color: var(--green-dark); }
@@ -313,7 +322,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .advantages-table .feature-cell { width: 22%; }
 .advantages-table td { width: 39%; }
 .advantage-callout { display: grid; grid-template-columns: 150px minmax(0, 1fr) minmax(220px, 30%); align-items: center; gap: 24px; background: #fff; border: 2px solid #397d17; border-radius: 34px; margin-top: 40px; padding: 18px 26px; }
-.advantage-check { width: 136px; height: 136px; border-radius: 50%; background: #27800b; display: grid; place-items: center; flex-shrink: 0; }
+.advantage-check { width: 136px; height: 136px; border-radius: 50%; background: transparent; display: grid; place-items: center; flex-shrink: 0; }
 .advantage-check img { width: 100%; height: 100%; object-fit: contain; }
 .advantage-heading { font-size: clamp(24px, 3vw, 36px); color: #1680a7; display: flex; align-items: center; gap: 10px; margin: 0 0 7px; font-weight: 400; white-space: nowrap; }
 .advantage-logo { width: 120px; height: auto; }
@@ -467,6 +476,10 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .site-header { margin-bottom: 12px; }
   .hero-grid > *, .about-grid > *, .footer-main > * { min-width: 0; }
   .gases-table-wrap, .advantages-table-wrap { max-width: 100%; }
+  .technology-page .page-hero-lede { max-width: 630px; white-space: normal; }
+  .principle-panel { grid-template-columns: minmax(0, 1fr); }
+  .footer-contact-cta { align-items: flex-start; flex-wrap: wrap; }
+  .footer-contact-cta > div { min-width: 0; }
 }
 
 @media (max-width: 640px) {
@@ -493,4 +506,13 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .site-footer { padding-top: 8px; }
   .site-footer-banner-wrap { margin-bottom: 16px; }
   .footer-bottom { flex-wrap: wrap; gap: 10px; font-size: 12px; }
+  .site-brochure-title { white-space: normal; }
+  .footer-contact-button { white-space: normal; }
+}
+
+@media (max-width: 380px) {
+  .site-footer-actions { align-items: stretch; }
+  .site-footer-actions > * { max-width: 100%; }
+  .footer-contact-cta { padding: 18px 14px; }
+  .footer-contact-button { width: 100%; }
 }

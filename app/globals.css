@@ -279,7 +279,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   font-size: var(--font-body);
 }
 .page-hero { padding: 24px 0; background: var(--green-light); border: 1px solid var(--border); border-radius: 14px; }
-.page-hero h1 { margin: 0; max-width: 850px; font-size: var(--font-page-title); line-height: 1.17; letter-spacing: normal; font-weight: 700; }
+.page-hero h1 { margin: 0; max-width: 850px; font-family: "Myriad Pro Condensed Bold", var(--font-site); font-size: var(--font-page-title); line-height: 1.17; letter-spacing: normal; font-weight: 700; }
 .page-hero-lede { max-width: 630px; margin: 14px 0 0; color: var(--muted); font-size: var(--font-body); }
 .technology-page .page-hero-lede { max-width: none; white-space: nowrap; }
 .page-section, .gases-section, .advantages-section { padding-block: 32px; }
@@ -287,7 +287,7 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .technology-page > .page-section-tint { padding-block: 32px; }
 .technology-pretreatment-section { margin-top: 32px; }
 .section-intro { margin-bottom: 30px; }
-.section-intro h2 { font-size: var(--font-section-title); margin-bottom: 12px; }
+.section-intro h2 { font-family: "Myriad Pro Condensed Bold", var(--font-site); font-size: var(--font-section-title); margin-bottom: 12px; }
 .section-intro p { color: var(--muted); font-size: var(--font-body); }
 .gas-reference-promo { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 7px; margin-top: 34px; color: var(--text); font-size: clamp(18px, 1.8vw, 25px); line-height: 1.25; text-decoration: underline; text-underline-offset: 4px; }
 .gas-reference-promo img { display: block; width: 180px; height: auto; }

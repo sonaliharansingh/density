@@ -29,7 +29,7 @@ const modelTypes = [
           <>
             Compatible with Industrial Automation.
             <br />
-            Configurable with PLC &amp; DCS.
+            <strong>Configurable with PLC &amp; DCS.</strong>
           </>
         ),
       },
@@ -83,7 +83,7 @@ const modelTypes = [
         alt: "Compact ASTRA treatment unit installed beside a laboratory fume hood",
         caption: (
           <>
-            Destruction of Pollutants.
+          <strong>Destruction of Pollutants.</strong>  
             <br />
             Not Transfer.
           </>
@@ -140,9 +140,9 @@ const modelTypes = [
         alt: "Compact mobile ASTRA treatment unit",
         caption: (
           <>
-            Mobile shield against
+            Mobile Shield Against
             <br />
-            hazardous VOC exposure.
+            <strong>Hazardous VOC Exposure.</strong>
           </>
         ),
       },

@@ -1,5 +1,5 @@
 .section { margin-bottom: 56px; }
-.section .kicker { margin-bottom: 8px; letter-spacing: .1em; }
+.section .kicker { margin-bottom: 8px; font-family: "Myriad Pro Condensed Bold", var(--font-site); font-weight: 700; letter-spacing: .1em; }
 .panel { --port-center: 57.5%; }
 .panel > * { min-width: 0; }
 .select { min-width: 0; max-width: 100%; }
@@ -42,7 +42,13 @@
 @media (max-width: 1000px) { .panel { padding: 32px 20px; gap: 12px; } .process { --flow-width: 25px; } @keyframes flow { 0% { transform: translateX(0); opacity: 0; } 20%, 75% { opacity: 1; } 100% { transform: translateX(20px); opacity: 0; } } }
 @media (max-width: 1000px) {
   .panel { grid-template-columns: minmax(0, 1fr); gap: 36px; padding: 28px 22px; }
-  .process { width: 100%; max-width: 440px; justify-self: center; margin-bottom: 20px; }
+  .process { width: 100%; max-width: 440px; justify-self: center; margin-bottom: 20px; padding: var(--flow-width) 0; }
+  .flow { left: 50%; top: 0; width: 2px; height: var(--flow-width); transform: translateX(-50%); }
+  .flow::after { right: auto; top: auto; bottom: 1px; left: 50%; transform: translateX(-50%) rotate(135deg); }
+  .flow i { top: 0; left: -3px; }
+  .outflow { top: auto; right: auto; bottom: 0; left: 50%; }
+  .process[data-active="true"] .flow i { animation-name: flow-down; }
+  @keyframes flow-down { 0% { transform: translateY(0); opacity: 0; } 20%, 75% { opacity: 1; } 100% { transform: translateY(20px); opacity: 0; } }
   .output { border-top: 1px solid var(--border); padding-top: 24px; }
   .output output { min-height: 70px; }
   .inputFormula { min-height: 0; }

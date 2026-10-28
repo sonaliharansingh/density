@@ -168,10 +168,6 @@ export default function ContactForm() {
             aria-describedby="details-hint"
           />
         </label>
-        <p id="details-hint" className={styles.fieldHint}>
-          At least 10 characters. Estimates are welcome — exact specifications
-          can follow.
-        </p>
         <details className={styles.technical}>
           <summary>
             <span>

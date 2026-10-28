@@ -42,7 +42,7 @@
 @media (max-width: 1000px) { .panel { padding: 32px 20px; gap: 12px; } .process { --flow-width: 25px; } @keyframes flow { 0% { transform: translateX(0); opacity: 0; } 20%, 75% { opacity: 1; } 100% { transform: translateX(20px); opacity: 0; } } }
 @media (max-width: 1000px) {
   .panel { grid-template-columns: minmax(0, 1fr); gap: 36px; padding: 28px 22px; }
-  .process { width: 100%; max-width: 440px; justify-self: center; margin-bottom: 20px; padding: var(--flow-width) 0; }
+  .process { width: 100%; max-width: 440px; justify-self: center; margin-bottom: 20px; padding: calc(var(--flow-width) + 14px) 0; }
   .flow { left: 50%; top: 0; width: 2px; height: var(--flow-width); transform: translateX(-50%); }
   .flow::after { right: auto; top: auto; bottom: 1px; left: 50%; transform: translateX(-50%) rotate(135deg); }
   .flow i { top: 0; left: -3px; }

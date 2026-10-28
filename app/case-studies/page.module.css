@@ -1,4 +1,4 @@
-.industries { margin-bottom: 48px; max-width: 820px; }
+.industries { margin-bottom: 16px; max-width: 820px; }
 .industries h2, .heading { color: var(--green); font-size: var(--font-section-title); }
 .industries p { color: var(--muted); margin-bottom: 0; }
 
@@ -52,7 +52,7 @@
 .outcome { color: var(--green-dark); font-weight: 700; }
 
 @media (max-width: 900px) {
-  .industries { margin-bottom: 34px; }
+  .industries { margin-bottom: 12px; }
   .tabs { grid-template-columns: 1fr; gap: 8px; }
   .tab { min-height: 58px; justify-content: flex-start; padding-inline: 18px; }
   .panel { grid-template-columns: 1fr; gap: 20px; }

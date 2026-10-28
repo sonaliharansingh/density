@@ -51,7 +51,7 @@ img { max-width: 100%; }
 svg { flex-shrink: 0; }
 h1, h2, h3 { font-family: var(--font-site); }
 h1, h2, h3, p, figure { margin-top: 0; }
-h2 { font-size: var(--font-section-title); letter-spacing: normal; line-height: 1.18; font-weight: 700; margin-bottom: 22px; }
+h2 { font-size: var(--font-section-title); letter-spacing: normal; line-height: 1.18; font-weight: 700; margin-bottom: 12px; }
 h3 { font-size: var(--font-card-title); letter-spacing: normal; line-height: 1.4; }
 p { line-height: var(--line-body); }
 .header-container { width: calc(100% - 2 * var(--content-inset)); margin-inline: auto; }

@@ -116,12 +116,12 @@ export default function InstallationTabs() {
               <dt>Effluent Gases</dt>
               <dd>{active.gases}</dd>
             </div>
-            <div>
-              <dt>Treatment Outcome</dt>
-              <dd className={active.outcome ? styles.outcome : undefined}>
-                {active.outcome}
-              </dd>
-            </div>
+            {active.outcome && (
+              <div>
+                <dt>Treatment Outcome</dt>
+                <dd className={styles.outcome}>{active.outcome}</dd>
+              </div>
+            )}
           </dl>
         </div>
       </div>

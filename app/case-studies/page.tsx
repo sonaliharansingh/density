@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function CaseStudiesPage() {
   return (
-    <main id="main-content" className="content-page">
+    <main id="main-content" className="content-page case-studies-page">
       <section className="page-hero page-hero-compact">
         <div className="header-container page-hero-inner">
           <h1>Case Studies</h1>

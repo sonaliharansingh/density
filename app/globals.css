@@ -117,7 +117,9 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   justify-content: center;
   gap: 12px;
   width: 232px;
-  min-height: 52px;
+  height: 52px;
+  min-height: 0;
+  box-sizing: border-box;
   padding: 0 20px;
   border: 1px solid var(--green);
   border-radius: 13px;
@@ -139,9 +141,9 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
 .site-brochure-button:active, .footer-contact-button:active { transform: translateY(0); }
 @media (max-width: 480px) {
   .site-footer-actions { gap: 10px; }
-  .site-brochure-button { width: min(232px, 100%); min-height: 48px; padding: 0 16px; }
-  .site-brochure-title { font-size: 17px; }
-  .site-brochure-subtitle { font-size: 14px; }
+  .site-brochure-button { width: min(232px, 100%); height: 52px; min-height: 0; padding: 0 16px; }
+  .site-brochure-title { font-size: 15px; line-height: 1.05; }
+  .site-brochure-subtitle { font-size: 12px; line-height: 1.1; }
   .site-footer-actions .footer-contact-button, .actions .footer-contact-button { min-height: 48px; padding: 9px 20px; font-size: 17px; }
 }
 @media (max-width: 640px) {
@@ -503,7 +505,6 @@ body:has(#contact-v2:target) .site-navigation a[href="#contact-v2"] {
   .site-footer-banner-wrap { margin-bottom: 16px; }
   .footer-bottom { flex-wrap: wrap; gap: 10px; font-size: 12px; }
   .site-brochure-title { white-space: normal; }
-  .footer-contact-button { white-space: normal; }
 }
 
 @media (max-width: 380px) {

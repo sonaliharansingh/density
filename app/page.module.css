@@ -65,14 +65,17 @@
 
 .footerActions :global(.site-brochure-button),
 .footerActions :global(.footer-contact-button) {
-  flex: 1 1 0;
-  width: auto;
+  flex: 0 1 auto;
+  height: 52px;
   min-width: 0;
+  min-height: 52px;
   max-width: none;
-  white-space: normal;
+  box-sizing: border-box;
 }
 
-.footerActions :global(.site-brochure-title) { white-space: normal; }
+.footerActions :global(.site-brochure-title),
+.footerActions :global(.site-brochure-subtitle) { white-space: nowrap; }
+.footerActions :global(.footer-contact-button span) { white-space: nowrap; }
 
 .bottom .footerActions {
   grid-column: 1 / -1;
@@ -124,10 +127,10 @@
 }
 
 .bottom .footerActions {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 1 / -1;
   align-self: center;
   flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .gasLink:hover { background: var(--green-dark); }
@@ -223,11 +226,11 @@
   .highlights { grid-template-columns: minmax(0, 1fr); }
   .actions { width: 100%; max-width: 360px; }
   .footerActions { gap: 10px; align-items: stretch; }
-  .footerActions :global(.site-brochure-button) { min-height: 56px; padding: 8px 10px; gap: 8px; justify-content: flex-start; }
+  .footerActions :global(.site-brochure-button) { height: 56px; min-height: 56px; padding: 8px 10px; gap: 8px; justify-content: flex-start; }
   .footerActions :global(.site-brochure-copy) { min-width: 0; }
   .footerActions :global(.site-brochure-title) { font-size: clamp(14px, 3.6vw, 17px); line-height: 1.2; }
   .footerActions :global(.site-brochure-subtitle) { font-size: clamp(12px, 3vw, 14px); line-height: 1.25; }
-  .footerActions :global(.footer-contact-button) { min-height: 56px; padding: 9px 12px; gap: 7px; font-size: clamp(14px, 3.6vw, 17px); }
+  .footerActions :global(.footer-contact-button) { height: 56px; min-height: 56px; padding: 9px 12px; gap: 7px; font-size: clamp(14px, 3.6vw, 17px); }
   .footerActions :global(.footer-contact-button span) { min-width: 0; }
   .footerActions :global(.footer-contact-button svg) { flex: 0 0 19px; }
 }
@@ -249,7 +252,6 @@
 
 @media (max-width: 380px) {
   .highlights { grid-template-columns: 1fr; }
-  .bottom .footerActions { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .bottom .footerActions :global(.site-brochure-button),
   .bottom .footerActions :global(.footer-contact-button) { width: 100%; min-width: 0; max-width: none; }
 }
